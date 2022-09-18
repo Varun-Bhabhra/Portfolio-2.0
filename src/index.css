@@ -18,3 +18,141 @@
 html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+/* Navbar Style */
+
+#showcase {
+  position: relative;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  z-index: 1;
+  transition: 0.4s ease-in-out;
+}
+
+#showcase.active {
+  right: 300px;
+}
+
+#showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* padding: 40px 100px; */
+  background-color: var(--primary);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url("./img/menu.svg");
+  background-color: var(--secondary);
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+
+#toggle.active {
+  background: url("./img/close.svg");
+  background-color: var(--secondary);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+}
+
+.menu {
+  background: var(--secondary);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu ul {
+  position: relative;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: 0.2s ease-in;
+}
+
+.menu ul li a:hover {
+  color: var(--action);
+}
+
+#underline {
+  cursor: pointer;
+  position: relative;
+}
+
+#underline:after {
+  content: "";
+  background-color: var(--action);
+  height: 2px;
+  width: 120%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.2s ease-in;
+}
+
+#underline:hover:after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 798px) {
+  #showcase.active {
+    right: 250px;
+  }
+
+  #toggle {
+    width: 50px;
+    height: 50px;
+    background-size: 20px;
+  }
+
+  #toggle.active {
+    background-size: 15px;
+  }
+
+  .menu {
+    width: 250px;
+  }
+
+  .text h2 {
+    font-size: 25em;
+  }
+
+  .text h3 {
+    font-size: 2em;
+  }
+}
+
+#divide {
+  content: "";
+  display: inline-block;
+  border: 1px solid var(--primary);
+  height: 2rem;
+}

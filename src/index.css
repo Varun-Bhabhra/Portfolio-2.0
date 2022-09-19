@@ -13,6 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
+  /* overflow-x: hidden; */
 }
 
 html {
@@ -26,10 +27,10 @@ html {
   right: 0;
   width: 100%;
   min-height: 100vh;
-  /* display: flex; */
-  justify-content: space-between;
-  align-items: center;
   background-color: var(--primary);
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
   z-index: 1;
   transition: 0.4s ease-in-out;
 }
@@ -43,8 +44,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  /* padding: 40px 100px; */
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
   z-index: 10;
   display: flex;
   align-items: center;
@@ -90,13 +90,13 @@ html {
   list-style: none;
 }
 
-.menu ul li a {
+.menu ul li {
   text-decoration: none;
   color: var(--primary);
   transition: 0.2s ease-in;
 }
 
-.menu ul li a:hover {
+.menu ul li:hover {
   color: var(--action);
 }
 
@@ -109,7 +109,7 @@ html {
   content: "";
   background-color: var(--action);
   height: 2px;
-  width: 120%;
+  width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -155,4 +155,34 @@ html {
   display: inline-block;
   border: 1px solid var(--primary);
   height: 2rem;
+}
+
+#myself {
+  clip-path: polygon(16% 0, 100% 0%, 83% 100%, 0% 100%);
+}
+
+/* Rotate Hover Style */
+#btn {
+  position: relative;
+  width: 120px;
+  height: 55px;
+  cursor: default;
+  overflow: hidden;
+}
+#text {
+  width: 120px;
+  height: 55px;
+  transition: 0.3s;
+  transform: translateY(-65px);
+}
+
+#link {
+  width: 120px;
+  transition: 0.3s;
+  transform: translateY(-65px);
+}
+
+#btn:hover #text,
+#btn:hover #link {
+  transform: translateY(5px);
 }

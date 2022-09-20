@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div id="showcase" className="pt-32 text-secondary">
 
-      <section className="max-w-screen-2xl lg:h-screen text-center sm:text-left mx-auto px-6 md:px-12 grid gap-20 justify-items-center items-center sm:grid-flow-col">
+      <section className="max-w-screen-2xl lg:h-screen text-left sm:text-left mx-auto px-6 md:px-12 grid gap-20 justify-items-center items-center sm:grid-flow-col">
 
         <div className="space-y-6 lg:space-y-12 sm:my32">
           <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl">A website can be the biggest break for your business</h2>
@@ -29,13 +29,15 @@ const Hero = () => {
         <img src={herobg} alt="background" className="absolute md:right-12 bottom-[36rem] sm:bottom-44 scale[1.7] lg:scale100"/>
 
         <div className="md:-translate-y-32">
-          <img id="myself" src={ me } alt="myself" width="5081" height="7621" className="w-full h-[34rem] md:h-screen object-cover object-center"/>
+          <div id="anim" className="aim">
+            <img id="myself" src={ me } alt="myself" width="5081" height="7621" className="w-full h-[34rem] md:h-screen object-cover object-center"/>
+          </div>
         </div>
 
         <div id="btn" className="sm:hidden">
-            <span id="text" className="inline-block uppercase text-xs">Scroll Down <span className="text-3xl inline-block translate-y-2">↓</span></span>
-            <span id="link" className="inline-block uppercase text-xs">Scroll Down <span className="text-3xl inline-block translate-y-2">↓</span></span>
-          </div>
+          <span id="text" className="inline-block uppercase text-xs">Scroll Down <span className="text-3xl inline-block translate-y-2">↓</span></span>
+          <span id="link" className="inline-block uppercase text-xs">Scroll Down <span className="text-3xl inline-block translate-y-2">↓</span></span>
+        </div>
 
       </section>
 

@@ -20,13 +20,13 @@ const Navbar = () => {
   return (
     <section className="font-poppins">
       {/* <div id="showcase" className=""> */}
-        <header className="px-6 lg:px-12 xl:px-24 2xl:px-32">
-          <div id="logo"><img src={ logo } alt="vector" className="w-16 lg:w-24 h-16 lg:h-24"/></div>
-          <div id="toggle" className="shadow-2xl hover:shadow-md transition-all" onClick={menuToggle}></div>
+        <header className="fixed px-6 lg:px-12 xl:px-24 2xl:px-32 py-4 md:py-1">
+          <div id="logo"><img src={ logo } alt="vector" className="w-16 lg:w-24 h-16 lg:h-24 drop-shadow-2xl"/></div>
+          <div id="toggle" className="shadow-2xl shadow-secondary/50 hover:shadow-lg hover:shadow-secondary/30 transition-all" onClick={menuToggle}></div>
         </header>
       {/* </div> */}
 
-      <div className="menu px-6">
+      <div className="menu px-6 pt-12">
         <ul className="btn space-y-6 text-lg lg:text-3xl">
             <li id="underline">Home</li>
             <li id="underline">Services</li>
@@ -38,7 +38,7 @@ const Navbar = () => {
           <Button
             text="Hire Me"
           />
-          <a href="/" className="inline-block border-2 border-action font-semibold py-3 lg:py-4 w-full text-sm lg:text-lg rounded-md cursor-pointer hover:scale-105 hover:-translate-y-1 hover:shadow-md hover:shadow-action transition-all">Resume <img src={ arrowDown } alt="vector" className="inline w-5 h-5 ml-2 lg:ml-4"/></a>
+          <a href="/" className="inline-block border-2 border-action hover:bg-action/10 font-semibold py-3 lg:py-4 w-full text-sm lg:text-lg rounded-md cursor-pointer hover:scale-105 hover:-translate-y-1 hover:shadow-xl hover:shadow-action/30 transition-all">Resume <img src={ arrowDown } alt="vector" className="inline w-5 h-5 ml-2 lg:ml-4"/></a>
         </div>
 
         <div className="flex flex-col gap-6 items-center text-center  text-primary">

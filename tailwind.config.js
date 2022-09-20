@@ -9,7 +9,8 @@ module.exports = {
       colors: {
         'primary': '#efeee5',
         'secondary': '#274546',
-        'action': '#f99a49'
+        'action': '#f99a49',
+        'extra': '#6CE5B1'
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],

@@ -20,8 +20,8 @@ const Navbar = () => {
   return (
     <section className="font-poppins">
       {/* <div id="showcase" className=""> */}
-        <header className="fixed px-6 lg:px-12 xl:px-24 2xl:px-32 py-4 md:py-1">
-          <div id="logo"><img src={ logo } alt="vector" className="w-16 lg:w-24 h-16 lg:h-24 drop-shadow-2xl"/></div>
+        <header className="fixed px-6 lg:px-12 xl:px-24 2xl:px-32 py-4 md:py-4 lg:py-1">
+          <div id="logo"><img src={ logo } alt="vector" className="w-16 lg:w-20 h-16 lg:h-20 drop-shadow-2xl"/></div>
           <div id="toggle" className="shadow-2xl shadow-secondary/50 hover:shadow-lg hover:shadow-secondary/30 transition-all" onClick={menuToggle}></div>
         </header>
       {/* </div> */}

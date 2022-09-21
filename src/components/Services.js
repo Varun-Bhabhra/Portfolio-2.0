@@ -13,14 +13,14 @@ import ctaDoodle1 from "../img/ctaDoodle1.svg"
 const Services = () => {
   return (
     <div id="showcase" className="py-20 text-secondary">
-      <section className="max-w-screen-2xl mx-auto px-6 md:px-12 space-y-24">
+      <section className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24">
 
         <div id="header" className="space-y-6">
           <h2 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl">Services</h2>
-          <p className="font-jost text-center font-light text-base lg:text-lg xl:text-xl sm:w-3/6 lg:w-2/6 mx-auto">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+          <p className="font-jost text-center font-light text-base lg:text-lg sm:w-3/6 lg:w-2/6 mx-auto">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
         </div>
 
-        <div className="grid gap-24 md:grid-flow-auto md:grid-cols-2">
+        <div className="grid gap-20 md:grid-flow-auto md:grid-cols-2">
           <Service
             img={dev}
             head="Web Development"

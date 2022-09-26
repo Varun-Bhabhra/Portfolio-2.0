@@ -30,7 +30,7 @@ const Hero = () => {
 
         <div className="md:-translate-y-32">
           <div id="anim">
-            <img id="myself" src={ me } alt="myself" width="5081" height="7621" className="w-full h-[34rem] md:h-screen object-cover object-center"/>
+            <img id="myself" src={ me } alt="Smarty Pants!" width="5081" height="7621" className="w-full h-[34rem] md:h-screen object-cover object-center"/>
           </div>
         </div>
 

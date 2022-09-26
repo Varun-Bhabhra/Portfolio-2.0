@@ -17,7 +17,11 @@ module.exports = {
         'jost': ['Jost', 'sans-serif'],
       },
       backgroundImage: {
-        'hero-bg': "url('/src/imgs/hero_bg.png')",
+        'services-bg': "url('/src/img/services_bg.svg')",
+        'skills-bg': "url('/src/img/skills_bg.svg')",
+        'about-bg': "url('/src/img/about_bg.svg')",
+        'testimonials-bg': "url('/src/img/testimonials_bg.svg')",
+        'portfolio-bg': "url('/src/img/portfolio_bg.svg')",
       }
     },
   },

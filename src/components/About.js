@@ -1,4 +1,5 @@
-import React from "react";
+// import React, { useRef, useEffect, useState } from "react";
+import { useInView } from 'react-intersection-observer';
 import arrow from "../img/arrow.svg";
 
 // Imgs
@@ -17,9 +18,12 @@ import sass from "../img/sass.svg"
 import tailwind from "../img/tailwind.svg"
 
 const About = () => {
+
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
+
   return (
     <div id="showcase" className="py-20 text-secondary">
-      <section className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24">
+      <section ref={myRef} className={`fade-in max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24 ${myElementIsVisible ? "appear" : ""}`}>
         <section className="space-y-8 md:space-y-0 md:grid sm:grid-cols-2 gap-12">
           <article className="">
             <div id="header" className="bg-skills-bg bg-contain bg-no-repeat bg-center">

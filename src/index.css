@@ -14,7 +14,6 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  /* overflow-x: hidden; */
 }
 
 html {
@@ -24,6 +23,9 @@ html {
 ::selection {
   background: var(--secondary);
   color: var(--primary);
+}
+body {
+  overflow-x: hidden;
 }
 
 /* Navbar Style */
@@ -193,19 +195,6 @@ html {
   transform: translateY(5px);
 }
 
-/* #btnDiv {
-  transition: transform 0.5s ease-in-out;
-}
-
-#btnAnchor {
-  transition: transform 0.5s ease-in-out;
-}
-
-#btnAnchor:hover #arr {
-  transform: translateX(10px);
-  transition: 0.5s ease-in-out;
-} */
-
 /* Hero Image Reveal Animation Styles  */
 #anim {
   position: relative;
@@ -247,5 +236,26 @@ html {
   100% {
     width: 0;
     left: 100%;
+  }
+}
+
+/* Scroll Revel Animation Styles */
+/* .fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+} */
+
+.fade-in.appear {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
   }
 }

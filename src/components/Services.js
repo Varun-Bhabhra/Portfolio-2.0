@@ -15,21 +15,9 @@ const Services = () => {
 
   const { ref: myRef, inView: myElementIsVisible } = useInView();
 
-  // const myRef = useRef();
-  // const [myElementIsVisible, setMyElementIsVisible] = useState();
-  // console.log('myElement', myElementIsVisible)
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver((entries) => {
-  //     const entry = entries[0];
-  //     setMyElementIsVisible(entry.isIntersecting)
-  //   })
-  //   observer.observe(myRef.current)
-  // }, [])
-
-
   return (
     <div id="showcase" className="py-20 text-secondary">
-      <section ref={myRef} className={`fade-in max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24 ${myElementIsVisible ? "appear" : ""}`}>
+      <section id="services" ref={myRef} className={`fade-in max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24 ${myElementIsVisible ? "appear" : ""}`}>
 
         <div id="header" className="space-y-6 bg-services-bg bg-contain bg-no-repeat">
           {/* <img src={ servicesBg } className="absolute sm:w-4/6 lg:w-7/12 md:left-12 top-32 scale[1.7] lg:scale100"/> */}

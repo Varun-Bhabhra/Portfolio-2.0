@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div id="showcase" className="pt-32 text-secondary">
 
-      <section className="max-w-screen-xl lg:hscreen text-left sm:text-left mx-auto px-6 md:px-12 2xl:px-0 grid gap-20 sm:gap-0 justify-items-center items-center sm:grid-flow-col">
+      <section id="hero" className="max-w-screen-xl lg:hscreen text-left sm:text-left mx-auto px-6 md:px-12 2xl:px-0 grid gap-20 sm:gap-0 justify-items-center items-center sm:grid-flow-col">
 
         <div className="space-y-6 lg:space-y-12 sm:my32">
           <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl">A website can be the biggest break for your business</h2>

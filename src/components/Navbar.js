@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import { Link } from "react-scroll";
 
 // Imgs
 import logo from "../img/logo.svg"
@@ -12,6 +13,7 @@ import github from "../img/github.svg";
 
 
 const Navbar = () => {
+
   const menuToggle = () => {
     document.querySelector('#toggle').classList.toggle('active');
     document.querySelector('#showcase').classList.toggle('active');
@@ -19,19 +21,25 @@ const Navbar = () => {
 
   return (
     <section className="font-poppins">
-      {/* <div id="showcase" className=""> */}
         <header className="fixed px-6 lg:px-12 xl:px-24 2xl:px-32 py-4 md:py-4 lg:py-1">
           <div id="logo"><img src={ logo } alt="vector" className="w-16 lg:w-20 h-16 lg:h-20 drop-shadow-2xl"/></div>
           <div id="toggle" className="shadow-2xl shadow-secondary/50 hover:shadow-lg hover:shadow-secondary/30 transition-all" onClick={menuToggle}></div>
         </header>
-      {/* </div> */}
 
       <div className="menu px-6 pt-12">
         <ul className="btn space-y-6 text-lg lg:text-3xl">
-            <li id="underline">Home</li>
-            <li id="underline">Services</li>
-            <li id="underline">About</li>
-            <li id="underline">Portfolio</li>
+            <li id="underline">
+              <Link to="hero" spy={true} smooth={true} offset={-150} duration={800} onClick={menuToggle}>Home</Link>
+            </li>
+            <li id="underline">
+              <Link to="services" spy={true} smooth={true} offset={-90} duration={800} onClick={menuToggle}>Services</Link>
+            </li>
+            <li id="underline">
+              <Link to="about" spy={true} smooth={true} offset={-100} duration={800} onClick={menuToggle}>About</Link>
+            </li>
+            <li id="underline">
+              <Link to="portfolio" spy={true} smooth={true} offset={-100} duration={800} onClick={menuToggle}>Portfolio</Link>
+            </li>
         </ul>
 
         <div className="w-4/6 text-center text-action space-y-8">

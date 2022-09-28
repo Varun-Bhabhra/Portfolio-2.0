@@ -1,12 +1,12 @@
 import React from "react";
 
 //Imgs
-import arrow from "../img/arrow.svg";
+// import arrow from "../img/arrow.svg";
 
-const Button = ({text, classname, href}) => {
+const Button = ({text, className, href}) => {
   return (
-    <div id="btnDiv" className={classname}>
-      <a id="btnAnchor" href={href} className="inline-block text-center text-primary bg-action font-semibold py-3 lg:py-4 w-full text-sm lg:text-lg rounded-md cursor-pointer hover:scale-105 hover:-translate-y-1 hover:shadow-xl hover:shadow-action/30 transition-all">{text} <img id="arr" src={ arrow } alt="vector" className="inline w-5 ml-2 lg:ml-4"/></a>
+    <div id="btnDiv" className={className}>
+      <a id="btnAnchor" href={href} className="inline-block text-center text-primary bg-action border-2 border-action font-semibold py-3 w-full text-sm lg:text-lg rounded-full cursor-pointer hover:scale105 hover:-translate-y1 hover:shadow-lg hover:shadow-action/30 hover:-translate-y-[2px] transition-all duration-200">{text}</a>
     </div>
   )
 };

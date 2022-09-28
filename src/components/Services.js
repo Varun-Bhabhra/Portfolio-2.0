@@ -50,7 +50,7 @@ const Services = () => {
 
         <div className="">
           <Button
-            classname="sm:w-2/6 md:w-3/12 mx-auto lg:pt-6 relative z-10"
+            className="sm:w-2/6 md:w-3/12 mx-auto lg:pt-6 relative z-10"
             text="Get a quotation"
           />
         </div>

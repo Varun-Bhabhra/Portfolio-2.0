@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "./Button";
 import { Link } from "react-scroll";
+import ButtonGhost from "./ButtonGhost";
 
 // Imgs
 import logo from "../img/logo.svg"
-import arrowDown from "../img/arrowDown.svg";
+// import arrowDown from "../img/arrowDown.svg";
 import msg from "../img/msg.svg";
 import twitter from "../img/twitter.svg";
 import instagram from "../img/instagram.svg";
@@ -46,7 +47,11 @@ const Navbar = () => {
           <Button
             text="Hire Me"
           />
-          <a href="https://drive.google.com/file/d/1TpoWs_9WP8vOUGg_a1KbOYJGaVmebVd_/view?usp=sharing" target="__blank" className="inline-block border-2 border-action hover:bg-action/10 font-semibold py-3 lg:py-4 w-full text-sm lg:text-lg rounded-md cursor-pointer hover:scale-105 hover:-translate-y-1 hover:shadow-xl hover:shadow-action/30 transition-all">Resume <img src={ arrowDown } alt="vector" className="inline w-5 h-5 ml-2 lg:ml-4"/></a>
+          <ButtonGhost
+              href="https://drive.google.com/file/d/1TpoWs_9WP8vOUGg_a1KbOYJGaVmebVd_/view?usp=sharing"
+            text="Resume"
+            target="__blank"
+            />
         </div>
 
         <div className="flex flex-col gap-6 items-center text-center  text-primary">

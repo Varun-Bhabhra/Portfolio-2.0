@@ -1,3 +1,4 @@
+import React from "react";
 import { useInView } from 'react-intersection-observer';
 import ButtonGhost from './ButtonGhost';
 
@@ -22,13 +23,13 @@ const About = () => {
 
   return (
     <div id="showcase" className="py-20 text-secondary">
-      <section id="about" ref={myRef} className={`fade-in max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24 ${myElementIsVisible ? "appear" : ""}`}>
+      <section id="about" className={`max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24`}>
         <section className="space-y-8 md:space-y-0 md:grid sm:grid-cols-2 gap-12">
           <article className="">
             <div id="header" className="bg-skills-bg bg-contain bg-no-repeat bg-center">
               <h2 className="text-center md:text-left font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">Skills</h2>
             </div>
-            <div className="mt-12 grid grid-flow-row grid-rows-3 grid-cols-4 gap-6 justify-items-center items-center">
+            <div ref={myRef} className={`fade-in mt-12 grid grid-flow-row grid-rows-3 grid-cols-4 gap-6 justify-items-center items-center ${myElementIsVisible ? "appear" : ""}`}>
               <img src={html} alt="skill icon" className="w-12"/>
               <img src={js} alt="skill icon" className="w-12"/>
               <img src={react} alt="skill icon" className="w-12"/>
@@ -50,7 +51,7 @@ const About = () => {
               <div id="header" className="bg-about-bg bg-contain bg-no-repeat bg-center">
                 <h2 className="text-center md:text-left font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">About</h2>
               </div>
-              <div className="mt-12 space-y-6 text-justify">
+              <div ref={myRef} className={`fade-in mt-12 space-y-6 text-justify ${myElementIsVisible ? "appear" : ""}`}>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>

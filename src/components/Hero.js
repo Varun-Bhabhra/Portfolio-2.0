@@ -3,7 +3,8 @@ import Button from "./Button";
 import ButtonGhost from "./ButtonGhost";
 
 // Imgs
-import me from "../img/me.webp"
+// import me from "../img/me.webp"
+import ctaDoodle1 from "../img/ctaDoodle1.svg"
 import herobg from "../img/hero_bg.svg"
 import herobg2 from "../img/hero_bg2.svg"
 
@@ -36,9 +37,9 @@ const Hero = () => {
         <img src={herobg2} alt="background" className="absolute sm:w-4/6 lg:w-7/12 md:left-12 top-44 scale[1.7] lg:scale100"/>
         <img src={herobg} alt="background" className="absolute sm:w-4/6 lg:w-7/12 md:right-12 bottom-[36rem] sm:bottom-44 scale[1.7] lg:scale100"/>
 
-        <div className="md:-translate-y-32">
+        <div className="md:-translate-y-32 ">
           <div id="anim">
-            <img id="myself" src={ me } alt="Smarty Pants!" width="5081" height="7621" className="w-full h-[40rem] md:h-screen object-cover object-center drop-shadow-xl"/>
+            <img id="myself" src={ ctaDoodle1 } alt="Smarty Pants!" width="5081" height="7621" className="w-full h-[40rem] md:h-screen object-cover object-center"/>
           </div>
         </div>
 

@@ -37,9 +37,9 @@ const Hero = () => {
         <img src={herobg2} alt="background" className="absolute sm:w-4/6 lg:w-7/12 md:left-12 top-44 scale[1.7] lg:scale100"/>
         <img src={herobg} alt="background" className="absolute sm:w-4/6 lg:w-7/12 md:right-12 bottom-[36rem] sm:bottom-44 scale[1.7] lg:scale100"/>
 
-        <div className="md:-translate-y-32 ">
+        <div className="md:-translate-y-32 wrapper">
           <div id="anim">
-            <img id="myself" src={ ctaDoodle1 } alt="Smarty Pants!" width="5081" height="7621" className="w-full h-[40rem] md:h-screen object-cover object-center"/>
+            <img id="myself" src={ ctaDoodle1 } alt="Smarty Pants!" width="5081" height="7621" className="foreground w-full h-[40rem] md:h-screen object-cover object-center "/>
           </div>
         </div>
 

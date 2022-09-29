@@ -16,7 +16,7 @@ const Hero = () => {
 
         <div className="space-y-8 lg:space-y-12 text-center sm:text-left md:mb-32">
           <h2 className="font-bold text-4xl md:text-4xl lg:text-5xl xl:text-7xl leading-snug">A website can be the biggest break for your business</h2>
-          <p className="font-jost font-light text-lg xl:text-xl xl:w-4/6">Hola! I'm Varun a self-taught developer driven my curiosity, based in Kolkata, India.</p>
+          <p className="font-jost font-light text-lg xl:text-xl xl:w-4/6">Hey! I'm Varun a self-taught developer driven my curiosity, based in Kolkata, India.</p>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Button

@@ -20,10 +20,12 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
+              to="contact"
               className="w5/6 sm:w-3/12 transition-all lg:pt-6 relative z-10"
               text="Hire Me"
             />
             <ButtonGhost
+              to="testimonial"
               className="w5/6 sm:w-3/12 transition-all lg:pt-6 relative z-10"
               text="Reviews"
             />

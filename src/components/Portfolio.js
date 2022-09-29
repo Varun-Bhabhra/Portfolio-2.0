@@ -12,14 +12,14 @@ import ctaDoodle2 from "../img/ctaDoodle2.svg"
 const Portfolio = () => {
   return (
     <div id="showcase" className="py-20 text-secondary">
-      <section className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24">
+      <section id="portfolio" className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24">
         <article className="space-y-24 md:space-y-0 md:grid grid-cols-2">
           <div id="header" className="">
             <div className="md:sticky top-36 space-y-12 bg-portfolio-bg bg-contain bg-no-repeat text-center md:text-left">
               <h2 className="font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">Portfolio</h2>
               <p className="font-jost font-light text-base lg:text-lg sm:w-5/6 mx-auto md:mx-0">I’ve worked with some great companies on exciting projects, but we won’t blab about them all. Here are a few best bits.</p>
 
-              <img src={ portfolioDoodle } alt="doodle" className="mx-auto md:mx-0"/>
+              <img src={ portfolioDoodle } alt="doodle" className="mx-auto md:mx-0 -scale-x-100"/>
               <div className="sm:w-5/6 mx-auto md:mx-0">
                 <h2 className="font-light text-xl md:text-2xl lg:text-3xl xl:text-4xl">All the sites are built from scratch in the following stack:</h2>
                 <TechItem
@@ -76,9 +76,9 @@ const Portfolio = () => {
               mockup={mdp}
             />
             <PortfolioCard
-              head="Shreya Gupta Portfolio"
+              head="Shreya Gupta Portfolio (Coming Soon)"
               para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim."
-              href="http://varunbhabhra.com"
+              href="/"
               mockup={mdp}
             />
             <PortfolioCard

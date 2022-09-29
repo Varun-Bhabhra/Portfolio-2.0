@@ -3,7 +3,7 @@ import ButtonGhost from "./ButtonGhost";
 
 // Imgs
 
-const PortfolioCard = ({ head, para, href,mockup  }) => {
+const PortfolioCard = ({ head, para, href,mockup }) => {
   return (
     <div className="bg-secondary text-primary rounded-2xl sm:w-4/6 md:w-full lg:w-6/6 mx-auto shadow-lg shadow-secondary/30 hover:scale-105 transition duration-200">
       <div className="py-12 px-8 lg:p-12 space-y-6">

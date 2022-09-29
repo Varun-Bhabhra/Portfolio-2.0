@@ -4,6 +4,10 @@ import Hero from "./Hero";
 import Services from "./Services";
 import About from "./About";
 import Portfolio from "./Portfolio";
+import Testimonial from "./Testimonial";
+import Contact from "./Contact";
+import Environment from "./Environment";
+import Footer from "./Footer";
 
 const App = () => {
   return (
@@ -13,6 +17,10 @@ const App = () => {
       <Services />
       <About />
       <Portfolio />
+      <Testimonial />
+      <Contact />
+      <Environment />
+      <Footer />
     </div>
   )
 };

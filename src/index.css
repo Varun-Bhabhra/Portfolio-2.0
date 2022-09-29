@@ -257,10 +257,7 @@ body {
     opacity: 0;
     transform: translateY(2rem);
   }
-  80% {
-    opacity: 0;
-    transform: translateY(2rem);
-  }
+
   100% {
     opacity: 1;
     transform: translateY(0rem);

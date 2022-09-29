@@ -45,6 +45,7 @@ const Navbar = () => {
 
         <div className="w-4/6 text-center text-action space-y-8">
           <Button
+            to="contact"
             text="Hire Me"
           />
           <ButtonGhost

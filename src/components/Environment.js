@@ -1,0 +1,23 @@
+import React from "react";
+// import { useInView } from 'react-intersection-observer';
+
+// Imgs
+import envDoodle from "../img/envDoodle.svg"
+
+const Environment = () => {
+  return (
+    <div id="showcase" className="pt-20 text-secondary">
+      <section className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0">
+        <article className="space-y-24 md:space-y-0 flex flex-col md:flex-row items-center">
+          <div className="space-y-12 text-center md:text-left">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold">For every 5 websites delivered, I plant a tree!</h2>
+            <p className="text-3xl font-jost">Share this website if you want me to plant more.</p>
+          </div>
+          <img src={envDoodle} alt="doodle" className="sm:w-4/6 mx-auto"/>
+        </article>
+      </section>
+    </div>
+  )
+};
+
+export default Environment;

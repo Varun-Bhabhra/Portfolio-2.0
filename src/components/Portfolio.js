@@ -48,7 +48,7 @@ const Portfolio = () => {
           </div>
         </article>
 
-        <article className="space-y-12 px-4">
+        <article className="space-y-12 lg:px-4">
           <PortfolioCard
             head="My Disability Partner"
             para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim."

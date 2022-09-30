@@ -1,29 +1,84 @@
 import React from "react";
-// import { useInView } from 'react-intersection-observer';
 
 // Imgs
-import testimonialDoodle from "../img/testimonialDoodle.svg";
+import twitter from "../img/twitter.svg";
+import instagram from "../img/instagram.svg";
 
 const Testimonial = () => {
+
+const testimonialContainer = document.querySelector('.testimonial-container')
+const testimonial = document.querySelector('.testimonial')
+const userImage = document.querySelector('.user-image')
+const userName = document.querySelector('.user-name')
+const role = document.querySelector('.role')
+  
+const testimonials = [
+  {
+    name: "Apoorva Sharma",
+    place: "Faridabad",
+    photo: "https://randomuser.me/api/portraits/women/41.jpg",
+    text: "One Simply dummy text of the printing and typesetting industry. Lorem Ipsum has the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the."
+  },
+  {
+    name: "Aishwarya Ananthraman",
+    place: "Chennai",
+    photo: "https://randomuser.me/api/portraits/women/42.jpg",
+    text: "Two Simply dummy text of the printing and typesetting industry. Lorem Ipsum has the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the."
+  },
+  {
+    name: "Litesh Mehta",
+    place: "Australia",
+    photo: "https://randomuser.me/api/portraits/women/43.jpg",
+    text: "Three Simply dummy text of the printing and typesetting industry. Lorem Ipsum has the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the."
+  },
+  {
+    name: "Shreya Sharma",
+    place: "Kolkata",
+    photo: "https://randomuser.me/api/portraits/women/44.jpg",
+    text: "Four Simply dummy text of the printing and typesetting industry. Lorem Ipsum has the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the."
+  }
+  ]
+  
+  let idx = 1;
+
+  const updateTestimonial = () => {
+    const { name, place, photo, text } = testimonials[idx]
+
+    testimonial.innerHTML = text
+    userImage.src = photo
+    userName.src = name
+    role.src = place
+
+    idx++;
+
+    if (idx > testimonials.length - 1) {
+      idx = 0
+    } 
+  }
+
+  setInterval(updateTestimonial, 10000);
+
   return (
-    <div id="showcase" className="py-20 text-secondary">
-      <section id="testimonial" className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24">
-      <article className="space-y-24 md:space-y-0 md:grid grid-cols-2">
-          <div id="header" className="">
-            <div className="md:sticky top-36 space-y-8 bg-testimonials-bg bg-contain bg-no-repeat text-center md:text-left">
-              <h2 className="font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">Testimonial</h2>
-              <p className="font-jost font-light text-base lg:text-lg sm:w-5/6 mx-auto md:mx-0">Have a look what my clients think about my work!</p>
-
-              <img src={ testimonialDoodle } alt="doodle" className="mx-auto md:mx-0"/>
-            </div>
-          </div>
-
-          <div>
-
+    <section className="testimonial-container flex flex-col justify-center items-center gap-6">
+      <div className="user flex items-center gap-4">
+        <article className="flex items-center gap-4">
+          <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="avatar" className="user-image w-20 h-20 rounded-full" />
+          <div className="user-details">
+            <h4 className="user-name font-bold">Ron Weasly</h4>
+            <p className="role text-sm">Founder</p>
           </div>
         </article>
-      </section>
-    </div>
+
+        {/* <article className="flex gap-6">
+          <img src={instagram} alt="social icons" className="w-12"/>
+          <img src={twitter} alt="social icons" className="w-12"/>
+        </article> */}
+      </div>
+      <p className="testimonial text-center">
+      Simply dummy text of the printing and typesetting industry. Lorem Ipsum has the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the.
+      </p>
+      <div className="progress-bar"></div>
+    </section>
   )
 };
 

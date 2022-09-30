@@ -239,7 +239,20 @@ body {
   }
 }
 
-/* Hero Paralax Style  */
+/* Testimonial Styles  */
+.progress-bar {
+  background-color: var(--secondary);
+  height: 4px;
+  width: 80%;
+  animation: grow 10s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+}
 
 /* Scroll Revel Animation Styles */
 .fade-in {

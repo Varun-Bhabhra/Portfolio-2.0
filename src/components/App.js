@@ -4,7 +4,7 @@ import Hero from "./Hero";
 import Services from "./Services";
 import About from "./About";
 import Portfolio from "./Portfolio";
-import Testimonial from "./Testimonial";
+import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Environment from "./Environment";
 import Footer from "./Footer";
@@ -17,7 +17,7 @@ const App = () => {
       <Services />
       <About />
       <Portfolio />
-      <Testimonial />
+      <Testimonials />
       <Contact />
       <Environment />
       <Footer />

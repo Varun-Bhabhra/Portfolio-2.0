@@ -63,7 +63,7 @@ const About = () => {
         <section className="bg-secondary rounded-xl font-jost text-primary py-8 px-6 md:px-12 md:w-5/6 mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
           <h2 className="text-3xl sm:text-4xl">Hey! Take a look at my resume.</h2>
           <ButtonGhost
-            className="w-4/6 sm:w-3/6 md:w-5/6 lg:w-2/6 transition-all"
+            className="w-4/6 sm:w-3/6 md:w-5/6 lg:w-2/6 transition-all font-poppins"
             href="https://drive.google.com/file/d/1TpoWs_9WP8vOUGg_a1KbOYJGaVmebVd_/view?usp=sharing"
             text="Download Resume"
             target="__blank"

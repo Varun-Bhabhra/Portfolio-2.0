@@ -13,6 +13,7 @@ const CTA = ({ img, head, text }) => {
         <h2 className="font-bold text-4xl xl:text-5xl 2xl:text6xl uppercase">{ head }</h2>
         <p className="font-jost 2xl:text-xl">{ text }</p>
         <Button
+            to="contact"
             className="w-full sm:w-3/6 lg:w-3/6 lg:pt-6"
             text="Book a call"
           />

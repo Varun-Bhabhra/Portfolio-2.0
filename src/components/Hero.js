@@ -1,12 +1,13 @@
 import React from "react";
 import Button from "./Button";
-import ButtonGhost from "./ButtonGhost";
+import { Link } from "react-scroll";
 
 // Imgs
 // import me from "../img/me.webp"
-import ctaDoodle1 from "../img/ctaDoodle1.svg"
+// import ctaDoodle1 from "../img/ctaDoodle1.svg"
 import herobg from "../img/hero_bg.svg"
 import herobg2 from "../img/hero_bg2.svg"
+import demo from "../img/demo_comp.webp"
 
 const Hero = () => {
   return (
@@ -21,14 +22,14 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
               to="contact"
-              className="w5/6 sm:w-3/12 transition-all lg:pt-6 relative z-10"
+              className="sm:w-3/12 transition-all lg:pt-6 relative z-10"
               text="Hire Me"
             />
-            <ButtonGhost
-              to="testimonial"
-              className="w5/6 sm:w-3/12 transition-all lg:pt-6 relative z-10"
-              text="Reviews"
-            />
+
+            <div className="sm:w-3/12 transition-all lg:pt-6 relative z-10">
+              <Link to="testimonial" spy={true} smooth={true} offset={-90} duration={800} target="__blank" className="inline-block text-center text-action border-2 border-action hover:bg-action/10 font-semibold py-3 w-full text-sm lg:text-lg rounded-full cursor-pointer hover:scale105 hover:-translate-y1 hover:shadow-lg hover:shadow-action/30 transition-all hover:-translate-y-[2px] duration-200">Reviews</Link>
+            </div>
+
           </div>
           {/* <div id="btn" className="hidden sm:block">
             <span id="text" className="inline-block uppercase text-xs">Scroll Down <span className="text-3xl inline-block translate-y-2">↓</span></span>
@@ -41,7 +42,7 @@ const Hero = () => {
 
         <div className="md:-translate-y-32 wrapper">
           <div id="anim">
-            <img id="myself" src={ ctaDoodle1 } alt="Smarty Pants!" width="5081" height="7621" className="foreground w-full h-[40rem] md:h-screen object-cover object-center "/>
+            <img id="myself" src={ demo } alt="Smarty Pants!" width="5081" height="7621" className="foreground w-full h-[40rem] md:h-screen object-cover object-bottom "/>
           </div>
         </div>
 

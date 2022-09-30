@@ -25,7 +25,7 @@ const Footer = () => {
               </div>
             </article>
 
-            <hr className="border border-primary/70 rounded-full my-10" />
+            <hr className="border-primary rounded-full my-10" />
 
             <p className="text-center">All rights reserved | Copyright © 2022 Varun Bhabhra</p>
 

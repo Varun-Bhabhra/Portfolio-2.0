@@ -130,7 +130,7 @@ body {
   content: "";
   background-color: var(--action);
   height: 2px;
-  width: 100%;
+  width: 40%;
   position: absolute;
   bottom: 0;
   left: 0;

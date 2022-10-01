@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import ButtonGhost from "./ButtonGhost";
+// import ButtonGhost from "./ButtonGhost";
 
 // Imgs
 import logo from "../img/logo.svg"
@@ -20,13 +20,13 @@ const Navbar = () => {
 
   return (
     <section className="font-poppins">
-        <header className="fixed px-6 lg:px-12 xl:px-24 2xl:px-32 py-4 md:py-4 lg:py-1">
+        <header className="fixed px-6 lg:px-12 xl:px-24 2xl:px-32 py-4 md:py-4">
           <div id="logo"><Link to="hero" spy={true} smooth={true} offset={-150} duration={800}><img src={ logo } alt="vector" className="w-16 lg:w-20 h-16 lg:h-20 drop-shadow-2xl hover:cursor-pointer"/></Link></div>
           <div id="toggle" className="shadow-2xl shadow-secondary/50 hover:shadow-lg hover:shadow-secondary/30 transition-all" onClick={menuToggle}></div>
         </header>
 
       <div className="menu px-6 pt-12">
-        <ul className="btn mt-6 space-y-4 text-lg lg:text-3xl">
+        <ul className="btn mt-6 space-y-4 font-semibold tracking-wider text-lg lg:text-3xl">
             <li id="underline">
               <Link to="hero" spy={true} smooth={true} offset={-150} duration={800} onClick={menuToggle}>Home</Link>
             </li>
@@ -44,13 +44,13 @@ const Navbar = () => {
             </li>
         </ul>
 
-        <div className="w-4/6 text-center text-action space-y-8">
+        {/* <div className="w-4/6 text-center text-action space-y-8">
           <ButtonGhost
               href="https://drive.google.com/file/d/1TpoWs_9WP8vOUGg_a1KbOYJGaVmebVd_/view?usp=sharing"
             text="Resume"
             target="__blank"
             />
-        </div>
+        </div> */}
 
         <div className="flex flex-col gap-6 items-center text-center  text-primary">
           <img src={ msg } alt="vector" className="w-6"/>

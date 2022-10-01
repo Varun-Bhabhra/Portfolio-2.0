@@ -1,11 +1,9 @@
 import React from "react";
-import Button from "./Button";
 import { Link } from "react-scroll";
 import ButtonGhost from "./ButtonGhost";
 
 // Imgs
 import logo from "../img/logo.svg"
-// import arrowDown from "../img/arrowDown.svg";
 import msg from "../img/msg.svg";
 import twitter from "../img/twitter.svg";
 import instagram from "../img/instagram.svg";
@@ -41,13 +39,12 @@ const Navbar = () => {
             <li id="underline">
               <Link to="portfolio" spy={true} smooth={true} offset={-100} duration={800} onClick={menuToggle}>Portfolio</Link>
             </li>
+            <li id="underline">
+              <Link to="contact" spy={true} smooth={true} offset={-100} duration={800} onClick={menuToggle}>Contact</Link>
+            </li>
         </ul>
 
         <div className="w-4/6 text-center text-action space-y-8">
-          <Button
-            to="contact"
-            text="Hire Me"
-          />
           <ButtonGhost
               href="https://drive.google.com/file/d/1TpoWs_9WP8vOUGg_a1KbOYJGaVmebVd_/view?usp=sharing"
             text="Resume"

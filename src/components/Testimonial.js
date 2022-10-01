@@ -4,14 +4,13 @@ import React from "react";
 import twitterDark from "../img/twitterDark.svg";
 import instagramDark from "../img/instagramDark.svg";
 
-const Testimonial = ({img, name, place, href ,text}) => {
-
+const Testimonial = ({ img, name, place, href, text }) => {
+  
   return (
     <section className="md:px-12">
-          
         <div className="text-center flex flex-col items-center gap-8">
           <article className="flex flex-col items-center gap-4">
-            <img src={img} alt="avatar" className="w-16 h-16 rounded-full" />
+            <img src={img} alt="avatar" className="w-16 h-16 rounded-full object-cover" />
             <div className="">
               <h4 className="font-bold">{ name }</h4>
               <p className="text-sm">{ place }</p>

@@ -1,17 +1,18 @@
 import React from "react";
-// import { useInView } from 'react-intersection-observer';
+import { useInView } from 'react-intersection-observer';
 
 // Imgs
 import demo from "../img/demo_comp.webp"
-// import grass from "../img/grass.svg"
 
 const Footer = () => {
+
+  const { ref: myRef, inView: myElementIsVisible } = useInView({triggerOnce: true});
+
   return (
     <div id="showcase" className="text-primary">
-      {/* <img src={grass} alt="grass" className="w-full"/> */}
       <section className="bg-secondary">
         <article className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24">
-          <section className="py-12 ">
+          <section ref={myRef} className={`fade-in py-12 ${myElementIsVisible ? "appear" : ""}`}>
             <article className="flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0">
               <div className="flex flex-col md:flex-row gap-6 items-center text-center md:text-left">
                 <img src={demo} alt="Sexy Pants!" className="w-16 h-16 rounded-full object-cover object-center border-2 border-primary" />

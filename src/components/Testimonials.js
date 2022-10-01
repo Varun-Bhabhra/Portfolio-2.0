@@ -1,12 +1,16 @@
 import React from "react";
-// import { useInView } from 'react-intersection-observer';
+import { useInView } from 'react-intersection-observer';
 import Testimonial from "./Testimonial"
 import { Carousel } from "flowbite-react";
 
 // Imgs
 import testimonialDoodle from "../img/testimonialDoodle.svg";
+import mdpReview from "../img/mdpReview.png";
+import zaiReview from "../img/zaiReview.png";
 
 const Testimonials = () => {
+
+  const { ref: myRef, inView: myElementIsVisible } = useInView({triggerOnce: true});
 
   return (
     <div id="showcase" className="py-20 text-secondary">
@@ -17,11 +21,11 @@ const Testimonials = () => {
               <h2 className="font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">Testimonial</h2>
               <p className="font-jost font-light text-base lg:text-lg sm:w-5/6 mx-auto md:mx-0">Have a look what my clients think about my work!</p>
 
-              <img src={ testimonialDoodle } alt="doodle" className="mx-auto md:mx-0"/>
+              <img ref={myRef} src={ testimonialDoodle } alt="doodle" className={`fade-in mx-auto md:mx-0 ${myElementIsVisible ? "appear" : ""}`}/>
             </div>
           </div>
 
-          <div className="h-[30rem] sm:h-64 xl:h-80 2xl:h-96 dark">
+          <div ref={myRef} className={`fade-in h-[35rem] 2xl:h-[30rem] dark ${myElementIsVisible ? "appear" : ""}`}>
             <Carousel indicators={true} slideInterval={10000}>
               <Testimonial
                 img="https://randomuser.me/api/portraits/women/41.jpg"
@@ -31,18 +35,18 @@ const Testimonials = () => {
                 text="Simply dummy text of the printing and typesetting industry. Lorem Ipsum has the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the."
               />
               <Testimonial
-                img="https://randomuser.me/api/portraits/women/42.jpg"
+                img={zaiReview}
                 name="Aishwarya Ananthraman"
                 place="Chennai"
                 href=""
-                text="Simply dummy text of the printing and typesetting industry. Lorem Ipsum has the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the."
+                text="Varun is amazingly talented. He is patient and listens to customers needs and implements it as exactly as it was in the design. I loved working with him. I really thank him so much for developing my dream website so beautiful. I can’t thank you enough for being soo polite, kind and supportive throughout. You are just awesome, way to go! Definitely I am referring him to all of my friends. All the best!"
               />
               <Testimonial
-                img="https://randomuser.me/api/portraits/women/43.jpg"
+                img={mdpReview}
                 name="Litesh Mehta"
                 place="Australia"
                 href=""
-                text="Simply dummy text of the printing and typesetting industry. Lorem Ipsum has the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the."
+                text="Varun was very helpful and fast to respond to my inquiry. Not only was our experience personal and friendly, the project was delivered on time. The design and performance of the website is just perfect. I can’t recommend him highly enough and we look forward to continuing our working relationship together."
               />
             </Carousel>
           </div>

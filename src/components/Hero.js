@@ -10,7 +10,7 @@ import herobg2 from "../img/hero_bg2.svg"
 
 const Hero = () => {
   return (
-    <div id="showcase" className="pt-32 text-secondary">
+    <div id="showcase" className="pt-28 text-secondary">
 
       <section id="hero" className="max-w-screen-xl text-left sm:text-left mx-auto px-6 md:px-12 2xl:px-0 grid gap-10 sm:gap-0 justify-items-center items-center sm:grid-flow-col">
 

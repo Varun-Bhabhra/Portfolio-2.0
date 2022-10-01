@@ -24,8 +24,21 @@ html {
   /* background: var(--secondary); */
   color: var(--action);
 }
+
+/* Scroll bar */
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--primary);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--action);
+  /* border-radius: 3px; */
+}
+
 body {
   overflow-x: hidden;
+  height: 100vh;
 }
 
 /* Navbar Style */
@@ -236,21 +249,6 @@ body {
   100% {
     width: 0;
     left: 100%;
-  }
-}
-
-/* Testimonial Styles  */
-.progress-bar {
-  background-color: var(--secondary);
-  height: 4px;
-  width: 80%;
-  animation: grow 10s linear infinite;
-  transform-origin: left;
-}
-
-@keyframes grow {
-  0% {
-    transform: scaleX(0);
   }
 }
 

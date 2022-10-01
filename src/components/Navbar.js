@@ -23,12 +23,12 @@ const Navbar = () => {
   return (
     <section className="font-poppins">
         <header className="fixed px-6 lg:px-12 xl:px-24 2xl:px-32 py-4 md:py-4 lg:py-1">
-          <div id="logo"><img src={ logo } alt="vector" className="w-16 lg:w-20 h-16 lg:h-20 drop-shadow-2xl"/></div>
+          <div id="logo"><Link to="hero" spy={true} smooth={true} offset={-150} duration={800}><img src={ logo } alt="vector" className="w-16 lg:w-20 h-16 lg:h-20 drop-shadow-2xl hover:cursor-pointer"/></Link></div>
           <div id="toggle" className="shadow-2xl shadow-secondary/50 hover:shadow-lg hover:shadow-secondary/30 transition-all" onClick={menuToggle}></div>
         </header>
 
       <div className="menu px-6 pt-12">
-        <ul className="btn space-y-6 text-lg lg:text-3xl">
+        <ul className="btn mt-6 space-y-4 text-lg lg:text-3xl">
             <li id="underline">
               <Link to="hero" spy={true} smooth={true} offset={-150} duration={800} onClick={menuToggle}>Home</Link>
             </li>

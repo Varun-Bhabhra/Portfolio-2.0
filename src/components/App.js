@@ -10,6 +10,7 @@ import Environment from "./Environment";
 import Footer from "./Footer";
 
 const App = () => {
+
   return (
     <div id="showcase" className="font-poppins">
       <Navbar />

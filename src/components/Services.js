@@ -13,7 +13,7 @@ import ctaDoodle1 from "../img/ctaDoodle1.svg"
 
 const Services = () => {
 
-  const { ref: myRef, inView: myElementIsVisible } = useInView();
+  const { ref: myRef, inView: myElementIsVisible } = useInView({triggerOnce: true});
 
   return (
     <div id="showcase" className="py-20 text-secondary">

@@ -6,6 +6,10 @@ import CTA from "./CTA";
 
 // Imgs
 import mdp from "../img/mdp.webp";
+import zai from "../img/zai.webp";
+import tsot from "../img/tsot.webp";
+import pyalee from "../img/pyalee.webp";
+import my from "../img/my.webp";
 import portfolioDoodle from "../img/portfolioDoodle.svg";
 import ctaDoodle2 from "../img/ctaDoodle2.svg"
 
@@ -61,31 +65,25 @@ const Portfolio = () => {
               head="The Shades of Trades"
               para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim."
               href="http://theshadesoftrades.co.in"
-              mockup={mdp}
+              mockup={tsot}
             />
             <PortfolioCard
               head="Zai Makeover Studio"
               para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim."
               href="http://zaimakeoverstudio.com"
-              mockup={mdp}
+              mockup={zai}
             />
             <PortfolioCard
               head="Pyalee"
               para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim."
               href="http://pyalee.co.in"
-              mockup={mdp}
-            />
-            <PortfolioCard
-              head="Shreya Gupta Portfolio (Coming Soon)"
-              para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim."
-              href="/"
-              mockup={mdp}
+              mockup={pyalee}
             />
             <PortfolioCard
               head="Varun Bhabhra Portfolio"
               para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim."
               href="http://varunbhabhra.com"
-              mockup={mdp}
+              mockup={my}
             />
           </div>
         </article>

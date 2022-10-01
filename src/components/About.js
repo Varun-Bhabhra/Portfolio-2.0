@@ -19,7 +19,7 @@ import tailwind from "../img/tailwind.svg"
 
 const About = () => {
 
-  const { ref: myRef, inView: myElementIsVisible } = useInView();
+  const { ref: myRef, inView: myElementIsVisible } = useInView({triggerOnce: true});
 
   return (
     <div id="showcase" className="py-20 text-secondary">

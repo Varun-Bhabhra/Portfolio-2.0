@@ -21,14 +21,14 @@ const Services = () => {
 
         <div id="header" className="space-y-6 bg-services-bg bg-contain bg-no-repeat">
           <h2 className="text-center font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">Services</h2>
-          <p className="font-jost text-center font-light text-base lg:text-lg sm:w-3/6 lg:w-2/6 mx-auto">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+          <p className="font-jost text-center font-light text-base lg:text-lg sm:w-3/6 lg:w-2/6 mx-auto">Below are all the services I am providing.</p>
         </div>
 
         <div ref={myRef} className={`fade-in grid gap-20 md:grid-flow-auto md:grid-cols-2 ${myElementIsVisible ? "appear" : ""}`}>
           <Service
             img={dev}
             head="Web Development"
-            text="Simply dummy text of the printing and typesetting industry. Lorem Ipsum has the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the."
+            text="I develop websites that help you connect with your customers. Lorem Ipsum has the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the."
           />
           <Service
             img={ui}
@@ -38,7 +38,7 @@ const Services = () => {
           <Service
             img={ux}
             head="UX Design"
-            text="Simply dummy text of the printing and typesetting industry. Lorem Ipsum has the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the."
+            text="I design your website to be as easy to use as possible while guiding users towards the end goal. Putting the user’s experience first, whether they’re looking to subscribe, trying to contact you, or just gathering information, will ensure more loyal users increasing long term sales."
           />
           <Service
             img={content}
@@ -51,7 +51,7 @@ const Services = () => {
           <Button
             to="contact"
             className="sm:w-2/6 md:w-3/12 mx-auto lg:pt-6 relative z-10"
-            text="Get a quotation"
+            text="Ask for quotation"
           />
         </div>
 

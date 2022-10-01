@@ -60,31 +60,31 @@ const Portfolio = () => {
           <div className="space-y-12 lg:px-4">
             <PortfolioCard
               head="My Disability Partner"
-              para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim."
+              para="MDP's role is to implement the National Disability Insurance Scheme (NDIS), which will support a better life for thousands of Australians with a significant and permanent disability and their families and carers."
               href="http://mdpartner.com.au"
               mockup={mdp}
             />
             <PortfolioCard
               head="The Shades of Trades"
-              para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim."
+              para="A trading course website which simplifies trading with intrinsic concepts of price action techniques and procedures."
               href="http://theshadesoftrades.co.in"
               mockup={tsot}
             />
             <PortfolioCard
               head="Zai Makeover Studio"
-              para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim."
+              para="A portfolio and services website of a makeupartist from Chennai."
               href="http://zaimakeoverstudio.com"
               mockup={zai}
             />
             <PortfolioCard
               head="Pyalee"
-              para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim."
+              para="Landing page for a Tea Bag and Tea Cup company."
               href="http://pyalee.co.in"
               mockup={pyalee}
             />
             <PortfolioCard
               head="Varun Bhabhra Portfolio"
-              para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim."
+              para="My portfolio having the required information about me and the services I provide."
               href="http://varunbhabhra.com"
               mockup={my}
             />

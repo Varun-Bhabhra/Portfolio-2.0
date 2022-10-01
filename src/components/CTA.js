@@ -15,7 +15,7 @@ const CTA = ({ img, head, text }) => {
         <Button
             to="contact"
             className="w-full sm:w-3/6 lg:w-3/6 lg:pt-6"
-            text="Book a call"
+            text="Schedule meeting"
           />
       </div>
     </div>

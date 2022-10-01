@@ -21,7 +21,6 @@ html {
 }
 
 ::selection {
-  /* background: var(--secondary); */
   color: var(--action);
 }
 
@@ -33,7 +32,6 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--action);
-  /* border-radius: 3px; */
 }
 
 body {
@@ -47,11 +45,7 @@ body {
   position: relative;
   right: 0;
   width: 100%;
-  /* min-height: 100vh; */
   background-color: var(--primary);
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
   z-index: 1;
   transition: 0.4s ease-in-out;
 }
@@ -61,7 +55,6 @@ body {
 }
 
 #showcase header {
-  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -180,35 +173,23 @@ body {
 
 #myself {
   clip-path: polygon(16% 0, 100% 0%, 83% 100%, 0% 100%);
+  animation: heroImgRevl 1s ease-in;
 }
 
-/* Rotate Hover Style */
-#btn {
-  position: relative;
-  width: 120px;
-  height: 55px;
-  cursor: default;
-  overflow: hidden;
-}
-#text {
-  width: 120px;
-  height: 55px;
-  transition: 0.5s;
-  transform: translateY(-65px);
-}
-
-#link {
-  width: 120px;
-  transition: 0.5s;
-  transform: translateY(-65px);
-}
-
-#btn:hover #text,
-#btn:hover #link {
-  transform: translateY(5px);
+@keyframes heroImgRevl {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Hero Image Reveal Animation Styles  */
+
 #anim {
   position: relative;
   display: inline-block;
@@ -265,6 +246,48 @@ body {
 
 @keyframes fadeIn {
   0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+.fade-in.headline {
+  opacity: 1;
+  animation: fadeInHeadline 1.5s ease-out;
+}
+
+@keyframes fadeInHeadline {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+.fade-in.heroBtn {
+  opacity: 1;
+  animation: heroBtn 2.5s ease-in-out;
+}
+
+@keyframes heroBtn {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
     opacity: 0;
     transform: translateY(2rem);
   }

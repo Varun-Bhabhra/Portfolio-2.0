@@ -52,9 +52,16 @@ const About = () => {
                 <h2 className="text-center md:text-left font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">About</h2>
               </div>
               <div ref={myRef} className={`fade-in mt-12 space-y-6 text-justify ${myElementIsVisible ? "appear" : ""}`}>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                <p> Hey! I'm Varun Bhabhra a self-taught developer. Web Development crossed my way about two years ago, and since then I have been coding.
+                    In this journey, I have acquired knowledge in HTML, CSS, JavaScript mostly the front end and a bit of server
+                    side code with NodeJs. My love and interest in developing and designing has pushed me to excel in these skills
+                    which are showcased in some of my projects.
+                </p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                <p>Designing is something that needs patience, effort and time. I am here to provide all of it and make sure that
+                  my work becomes my identity. Being a minimalist, my belief is to make things simple and very specific. Speaking
+                  of myself, I'm open to learning and working my level best to make the results near to perfect.
+                </p>
               </div>
             </div>
           </article>

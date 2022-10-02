@@ -26,7 +26,7 @@ const Navbar = () => {
         </header>
 
       <div className="menu px-6 pt-12">
-        <ul className="btn mt-6 space-y-4 font-semibold tracking-wider text-lg lg:text-3xl">
+        <ul className="btn mt-6 space-y-8 font-medium tracking-wider text-lg lg:text-3xl">
             <li id="underline">
               <Link to="hero" spy={true} smooth={true} offset={-150} duration={800} onClick={menuToggle}>Home</Link>
             </li>

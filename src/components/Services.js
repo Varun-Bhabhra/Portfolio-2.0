@@ -5,10 +5,10 @@ import Button from "./Button";
 import CTA from "./CTA";
 
 // Imgs
-import dev from "../img/dev.png"
-import ui from "../img/ui.png"
-import ux from "../img/ux.png"
-import content from "../img/content.png"
+import dev from "../img/dev.webp"
+import ui from "../img/ui.webp"
+import ux from "../img/ux.webp"
+import content from "../img/content.webp"
 import ctaDoodle1 from "../img/ctaDoodle1.svg"
 
 const Services = () => {
@@ -17,7 +17,7 @@ const Services = () => {
 
   return (
     <div id="showcase" className="py-20 text-secondary">
-      <section id="services" className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24">
+      <section id="services" className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-32">
 
         <div id="header" className="space-y-6 bg-services-bg bg-contain bg-no-repeat">
           <h2 className="text-center font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">Services</h2>

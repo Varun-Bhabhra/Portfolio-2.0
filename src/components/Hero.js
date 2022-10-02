@@ -19,7 +19,7 @@ const Hero = () => {
       <section id="hero" className="max-w-screen-xl text-left sm:text-left mx-auto px-6 md:px-12 2xl:px-0 grid gap-10 sm:gap-0 justify-items-center items-center sm:grid-flow-col">
 
         <div className="space-y-2 lg:space-y-12 text-center sm:text-left md:mb-32">
-          <h2 ref={myRef} className={`fade-in font-bold text-3xl md:text-4xl lg:text-5xl xl:text-7xl leading-snug ${myElementIsVisible ? "headline" : ""}`}>I design & develop amazing experiences.</h2>
+          <h2 ref={myRef} className={`fade-in font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-7xl ${myElementIsVisible ? "headline" : ""}`}>I design & develop amazing experiences.</h2>
            <p ref={myRef} className={`fade-in font-jost font-normal text-lg xl:text-xl xl:w-4/6 ${myElementIsVisible ? "headline" : ""}`}>I'm Varun a developer & designer from Kolkata, India</p>
 
           <div ref={myRef} className={`fade-in pt-4 flex flex-col sm:flex-row gap-4 ${myElementIsVisible ? "heroBtn" : ""}`}>

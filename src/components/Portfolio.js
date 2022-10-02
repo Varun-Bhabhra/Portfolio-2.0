@@ -19,12 +19,12 @@ const Portfolio = () => {
 
   return (
     <div id="showcase" className="py-20 text-secondary">
-      <section id="portfolio" className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24">
+      <section id="portfolio" className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-32">
         <article className="space-y-24 md:space-y-0 md:grid grid-cols-2">
           <div id="header" className="">
             <div ref={myRef} className={`fade-in md:sticky top-36 space-y-12 bg-portfolio-bg bg-contain bg-no-repeat text-center md:text-left ${myElementIsVisible ? "appear" : ""}`}>
               <h2 className="font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">Portfolio</h2>
-              <p className="font-jost font-light text-base lg:text-lg sm:w-5/6 mx-auto md:mx-0">I’ve worked with some great companies on exciting projects, but we won’t blab about them all. Here are a few best bits.</p>
+              <p className="font-jost font-light text-base lg:text-lg sm:w-5/6 mx-auto md:mx-0">I’ve worked with some great companies on exciting projects, but I won’t blab about them all. Here are a few best bits.</p>
 
               <img src={ portfolioDoodle } alt="doodle" className="mx-auto md:mx-0 -scale-x-100"/>
               <div className="sm:w-5/6 mx-auto md:mx-0">
@@ -93,7 +93,7 @@ const Portfolio = () => {
 
         <CTA
           img={ctaDoodle2}
-          head="Redesign Your Existing Website?"
+          head="Redesign your existing website?"
           text="Schedule a call so I can learn about your product and we can discuss the best way to help you meet your goals."
         />
       </section>

@@ -5,8 +5,8 @@ import { Carousel } from "flowbite-react";
 
 // Imgs
 import testimonialDoodle from "../img/testimonialDoodle.svg";
-import mdpReview from "../img/mdpReview.png";
-import zaiReview from "../img/zaiReview.png";
+import mdpReview from "../img/mdpReview.webp";
+import zaiReview from "../img/zaiReview.webp";
 
 const Testimonials = () => {
 

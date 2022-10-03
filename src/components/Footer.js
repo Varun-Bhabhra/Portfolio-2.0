@@ -2,7 +2,7 @@ import React from "react";
 import { useInView } from 'react-intersection-observer';
 
 // Imgs
-import demo from "../img/demo_comp.webp"
+import footer_me from "../img/footer_me.webp"
 
 const Footer = () => {
 
@@ -15,7 +15,7 @@ const Footer = () => {
           <section ref={myRef} className={`fade-in py-12 ${myElementIsVisible ? "appear" : ""}`}>
             <article className="flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0">
               <div className="flex flex-col md:flex-row gap-6 items-center text-center md:text-left">
-                <img src={demo} alt="Sexy Pants!" className="w-16 h-16 rounded-full object-cover object-center border-2 border-primary" />
+                <img src={footer_me} alt="Sexy Pants!" className="w-16 h-16 rounded-full object-cover object-center border-2 border-primary" />
                 <h2 className="font-light">Designed & Developer with love by <span className="block font-semibold">Varun Bhabhra</span></h2>
               </div>
               <div className="uppercase font-semibold grid grid-cols-2 md:grid-cols-4 justify-items-center gap-6 md:gap-12">

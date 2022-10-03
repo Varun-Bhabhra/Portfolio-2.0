@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 
 // Imgs
 // import me from "../img/me.webp"
-import demo from "../img/demo_comp.webp"
+import hero_me from "../img/hero_me.webp"
 import herobg from "../img/hero_bg.svg"
 import herobg2 from "../img/hero_bg2.svg"
 
@@ -41,7 +41,7 @@ const Hero = () => {
 
         <div className="md:-translate-y-28 wrapper">
           <div id="anim">
-            <img id="myself" src={ demo } alt="Smarty Pants!" width="5081" height="7621" className="foreground w-full h-[40rem] md:h-screen object-cover object-bottom "/>
+            <img id="myself" src={ hero_me } alt="Smarty Pants!" width="5081" height="7621" className="foreground w-full h-[40rem] md:h-screen object-cover object-bottom "/>
           </div>
         </div>
       </section>

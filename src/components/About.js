@@ -46,7 +46,7 @@ const About = () => {
           </article>
 
           <article className="flex flex-col md:flex-row">
-            <article className="md:p-4 lg:p-6 mb-12 md:mb-0 md:mr-4 bg-secondary rounded-xl md:-translate-x-8"><img src={dots} alt="dots" className="rotate-90 md:rotate-0 mx-auto w-4 md:w-24 lg:w44"/></article>
+            <article  className="md:p-4 mb-12 md:mb-0 md:mr-4 bg-secondary rounded-full md:-translate-x-5 lg:-translate-x-7"><img src={dots} alt="dots" className="rotate-90 md:rotate-0 mx-auto md:my-44 w-4 md:w-24 lg:w-16"/></article>
             <div>
               <div id="header" className="bg-about-bg bg-contain bg-no-repeat bg-center">
                 <h2 className="text-center md:text-left font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">About</h2>
@@ -67,7 +67,7 @@ const About = () => {
           </article>
         </section>
 
-        <section className="bg-secondary rounded-xl font-jost text-primary py-8 px-6 md:px-12 md:w-6/6 mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+        <section className="bg-secondary rounded-xl font-jost text-primary py-8 px-6 md:px-12 md:w-5/6 mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
           <h2 className="text-3xl sm:text-4xl">Hey! Take a look at my resume.</h2>
           <ButtonGhost
             className="w-4/6 sm:w-3/6 md:w-5/6 lg:w-2/6 transition-all font-poppins"

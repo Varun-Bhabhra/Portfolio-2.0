@@ -26,7 +26,7 @@ const Navbar = () => {
         </header>
 
       <div className="menu px-6 pt-12">
-        <ul className="btn mt-6 space-y-8 font-medium tracking-wider text-lg lg:text-3xl">
+        <ul className="btn mt-6 space-y-8 font-medium tracking-wider text-lg lg:text-2xl">
             <li id="underline">
               <Link to="hero" spy={true} smooth={true} offset={-150} duration={800} onClick={menuToggle}>Home</Link>
             </li>
@@ -52,10 +52,10 @@ const Navbar = () => {
             />
         </div> */}
 
-        <div className="flex flex-col gap-6 items-center text-center  text-primary">
+        <div className="flex flex-col gap-4 items-center text-center  text-primary">
           <img src={ msg } alt="vector" className="w-6"/>
-          <div className="space-y-6">
-            <h2 className="font-light text-sm md:text-xl uppercase">Don't be a stranger!</h2>
+          <div className="space-y-4">
+            <h2 className="font-extralight text-sm md:text-lg uppercase">Don't be a stranger!</h2>
             <span id="divide"></span>
           </div>
           <div className="flex gap-3 lg:gap-6">

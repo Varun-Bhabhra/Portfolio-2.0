@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import ButtonGhost from './ButtonGhost';
 
 // Imgs
-import dots from "../img/dots.svg"
+// import dots from "../img/dots.svg"
 import express from "../img/express.svg"
 import figma from "../img/figma.svg"
 import gh from "../img/gh.svg"
@@ -46,7 +46,8 @@ const About = () => {
           </article>
 
           <article className="flex flex-col md:flex-row">
-            <article  className="md:p-4 mb-12 md:mb-0 md:mr-4 bg-secondary rounded-full md:-translate-x-5 lg:-translate-x-7"><img src={dots} alt="dots" className="rotate-90 md:rotate-0 mx-auto md:my-44 w-4 md:w-24 lg:w-16"/></article>
+            {/* <article  className="md:p-4 mb-12 md:mb-0 md:mr-4 bg-secondary rounded-full md:-translate-x-5 lg:-translate-x-7"><img src={dots} alt="dots" className="rotate-90 md:rotate-0 mx-auto md:my-44 w-4 md:w-24 lg:w-16"/></article> */}
+            <article  className="p-[2px] mb-12 md:mb-0 md:mr-4 bg-secondary rounded-full md:-translate-x-5 lg:-translate-x-7"></article>
             <div>
               <div id="header" className="bg-about-bg bg-contain bg-no-repeat bg-center">
                 <h2 className="text-center md:text-left font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">About</h2>

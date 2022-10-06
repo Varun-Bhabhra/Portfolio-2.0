@@ -15,9 +15,9 @@ const App = () => {
     <div id="showcase" className="font-poppins">
       <Navbar />
       <Hero />
+      <Portfolio />
       <Services />
       <About />
-      <Portfolio />
       <Testimonials />
       <Contact />
       <Environment />

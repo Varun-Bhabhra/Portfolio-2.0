@@ -24,7 +24,7 @@ const Services = () => {
           <p className="font-jost text-center font-regular text-base lg:text-lg sm:w-3/6 lg:w-2/6 mx-auto">Seen my work ? <br /> These are the services I'hv provided up there!</p>
         </div>
 
-        <div ref={myRef} className={`fade-in max-w-screen-lg mx-auto grid gap-20 md:grid-flow-auto sm:grid-cols-2 ${myElementIsVisible ? "appear" : ""}`}>
+        <div ref={myRef} className={`fade-in max-w-screen-lg mx-auto grid gap-16 md:gap-20 md:grid-flow-auto sm:grid-cols-2 ${myElementIsVisible ? "appear" : ""}`}>
           <Service
             img={ui}
             head="UI Design"

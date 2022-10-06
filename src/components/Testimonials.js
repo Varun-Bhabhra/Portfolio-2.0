@@ -43,10 +43,10 @@ const Testimonials = () => {
               />
               <Testimonial
                 img="https://randomuser.me/api/portraits/women/41.jpg"
-                name="Apoorva Sharma"
-                place="Faridabaad, India"
+                name="Aditya Sharma"
+                place="Kurukshetra, India"
                 href=""
-                text="Simply dummy text of the printing and typesetting industry. Lorem Ipsum has the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the.Lorem Ipsum has been the industry's Lorem Ipsum has been the."
+                text="Varun shows good reception of feedback and is able to accurately actuate the ideas in one’s head. Always a breeze to work with him."
               />
             </Carousel>
           </div>

@@ -25,7 +25,7 @@ const Testimonials = () => {
             </div>
           </div>
 
-          <div ref={myRef} className={`fade-in h-[35rem] 2xl:h-[30rem] dark ${myElementIsVisible ? "appear" : ""}`}>
+          <div ref={myRef} className={`fade-in h-[35rem] md:h-[35rem] 2xl:h-[25rem] dark ${myElementIsVisible ? "appear" : ""}`}>
             <Carousel indicators={true} slideInterval={10000}>
               <Testimonial
                 img={mdpReview}
@@ -42,7 +42,7 @@ const Testimonials = () => {
                 text="Varun is amazingly talented. He is patient and listens to customers needs and implements it as exactly as it was in the design. I loved working with him. I really thank him so much for developing my dream website so beautiful. I can’t thank you enough for being soo polite, kind and supportive throughout. You are just awesome, way to go! Definitely I am referring him to all of my friends. All the best!"
               />
               <Testimonial
-                img="https://randomuser.me/api/portraits/women/41.jpg"
+                img="https://randomuser.me/api/portraits/men/77.jpg"
                 name="Aditya Sharma"
                 place="Kurukshetra, India"
                 href=""

@@ -3,6 +3,11 @@ import { useInView } from 'react-intersection-observer';
 
 // Imgs
 import footer_me from "../img/footer_me.webp"
+import twitter from "../img/twitter.svg";
+import instagram from "../img/instagram.svg";
+import linkedin from "../img/linkedin.svg";
+import github from "../img/github.svg";
+
 
 const Footer = () => {
 
@@ -18,12 +23,12 @@ const Footer = () => {
                 <img src={footer_me} alt="Sexy Pants!" className="w-16 h-16 rounded-full object-cover object-center border-2 border-primary" />
                 <h2 className="font-light">Designed & Developed with love💚 by <span className="block font-semibold">Varun Bhabhra</span></h2>
               </div>
-              <div className="uppercase font-semibold grid grid-cols-2 md:grid-cols-4 justify-items-center gap-6 md:gap-12">
-                <a href="https://www.instagram.com/varun_frontend_dev/" target="__blank" className="hover:text-action transition-colors"><i className="fa-brands fa-instagram text-2xl"></i></a>
-                <a href="https://twitter.com/VBhabhra" target="__blank" className="hover:text-action transition-colors"><i className="fa-brands fa-twitter text-2xl"></i></a>
-                <a href="https://github.com/Varun-Bhabhra" target="__blank" className="hover:text-action transition-colors"><i className="fa-brands fa-github text-2xl"></i></a>
-                <a href="https://www.linkedin.com/in/varun-bhabhra-845777210/" target="__blank" className="hover:text-action transition-colors"><i className="fa-brands fa-linkedin text-2xl"></i></a>
-              </div>
+              <div className="flex gap-6">
+                <a href="https://twitter.com/VBhabhra" target="__blank"><img src={ twitter } alt="vector" className="w-10 lg:w-10 hover:-translate-y-2 transition-all"/></a>
+                <a href="https://www.instagram.com/varun_frontend_dev/" target="__blank"><img src={ instagram } alt="vector" className="w-10 lg:w-10 hover:-translate-y-2 transition-all"/></a>
+                <a href="https://www.linkedin.com/in/varun-bhabhra-845777210/" target="__blank"><img src={ linkedin } alt="vector" className="w-10 lg:w-10 hover:-translate-y-2 transition-all"/></a>
+                <a href="https://github.com/Varun-Bhabhra" target="__blank"><img src={ github } alt="vector" className="w-10 lg:w-10 hover:-translate-y-2 transition-all"/></a>
+            </div>
             </article>
 
             <hr className="border-primary rounded-full my-10" />

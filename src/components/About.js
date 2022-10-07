@@ -46,23 +46,27 @@ const About = () => {
           </article>
 
           <article className="flex flex-col md:flex-row">
-            {/* <article  className="md:p-4 mb-12 md:mb-0 md:mr-4 bg-secondary rounded-full md:-translate-x-5 lg:-translate-x-7"><img src={dots} alt="dots" className="rotate-90 md:rotate-0 mx-auto md:my-44 w-4 md:w-24 lg:w-16"/></article> */}
             <article  className="p-[2px] mb-12 md:mb-0 md:mr-4 bg-secondary rounded-full md:-translate-x-5 lg:-translate-x-7"></article>
             <div>
               <div id="header" className="bg-about-bg bg-contain bg-no-repeat bg-center">
                 <h2 className="text-center md:text-left font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">About</h2>
               </div>
-              <div ref={myRef} className={`fade-in mt-12 space-y-6 text-justify ${myElementIsVisible ? "appear" : ""}`}>
-                <p> Hey! I'm Varun Bhabhra a self-taught developer. Web Development crossed my way about two years ago, and since then I have been coding.
-                    In this journey, I have acquired knowledge in HTML, CSS, JavaScript mostly the front end and a bit of server
-                    side code with NodeJs. My love and interest in developing and designing has pushed me to excel in these skills
-                    which are showcased in some of my projects.
+              <div ref={myRef} className={`fade-in mt-12 space-y-3 text-justify ${myElementIsVisible ? "appear" : ""}`}>
+                <p className="">
+                  Hey👋, my name is Varun Bhabhra! I'm a self-taught developer & designer from West Bengal, India, who is really into unique designs, user experience and writing clean code.
+
+                  <br/>
+                  <br/>
+
+                  Speaking of myself while studying B.com(Hons) in Accountancy from University of Calcutta (Surprise!), web development crossed my way and since then my journey as a developer begun. Currently I'm working as a freelance developer, I'hv always taken deep interest in designing and developing beautiful websites for my clients which focus on proving the best experience for everyone using them. Designing is something that needs patience, effort and time. I am here to provide all of it and make sure that my work becomes my identity. Being a minimalist, my belief is to make things simple and very specific. I'm open to learning and working my level best to make the results near to perfect.
+                  <br/>
+                  <br/>
+                  
+                  I love the color green as you can already see, enjoy watching TV series, reading book and dancing.
+                  
                 </p>
 
-                <p>Designing is something that needs patience, effort and time. I am here to provide all of it and make sure that
-                  my work becomes my identity. Being a minimalist, my belief is to make things simple and very specific. Speaking
-                  of myself, I'm open to learning and working my level best to make the results near to perfect.
-                </p>
+
               </div>
             </div>
           </article>
@@ -72,7 +76,7 @@ const About = () => {
           <h2 className="text-3xl sm:text-4xl">Hey! Take a look at my resume.</h2>
           <ButtonGhost
             className="w-4/6 sm:w-3/6 md:w-5/6 lg:w-2/6 transition-all font-poppins"
-            href="https://drive.google.com/file/d/1TpoWs_9WP8vOUGg_a1KbOYJGaVmebVd_/view?usp=sharing"
+            href="https://drive.google.com/file/d/13g5GALqOvQKDk0h3jrjppRS5Hq03ag5V/view?usp=sharing"
             text="Download Resume"
             target="__blank"
             />

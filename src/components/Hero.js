@@ -38,9 +38,9 @@ const Hero = () => {
           </div>
           <p ref={myRef} className={`fade-in sm:text-sm lg:text-lg ${myElementIsVisible ? "headline" : ""}`}>Looking for my resume? <a href="https://drive.google.com/file/d/13g5GALqOvQKDk0h3jrjppRS5Hq03ag5V/view?usp=sharing" target="__blank" id="underline" className="font-bold text-action hover:tracking-wider transition-all"><em>Download Here &#x2197;</em></a></p>
         </div>
-
-        <img src={herobg2} alt="background" className="absolute sm:w-4/6 lg:w-7/12 md:left-12 top-44 scale[1.7] lg:scale100"/>
-        <img src={herobg} alt="background" className="absolute sm:w-4/6 lg:w-7/12 md:right-12 bottom-[36rem] sm:bottom-44 scale[1.7] lg:scale100"/>
+        
+          <img src={herobg2} alt="background" className="absolute sm:w-4/6 lg:w-7/12 md:left-12 top-44 scale[1.7] lg:scale-100 overflow-hidden"/>
+          <img src={herobg} alt="background" className="absolute sm:w-4/6 lg:w-7/12 md:right-12 bottom-[36rem] sm:bottom-44 scale[1.7] lg:scale100"/>
 
         <div className="md:-translate-y-28 wrapper">
           <div id="anim">

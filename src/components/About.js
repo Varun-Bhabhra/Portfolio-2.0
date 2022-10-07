@@ -62,7 +62,7 @@ const About = () => {
                   <br/>
                   <br/>
                   
-                  I love the color green as you can already see, enjoy watching TV series, reading book and dancing.
+                  {/* I love the color green as you can already see, enjoy watching TV series, reading book and dancing. */}
                   
                 </p>
 

@@ -24,6 +24,8 @@ const Contact = () => {
           <div ref={myRef} className={`fade-in ${myElementIsVisible ? "appear" : ""}`}>
             <form action="https://formsubmit.co/bhabhravarun@gmail.com" method="POST">
               <div className="flex flex-col gap-4">
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_subject" value="Yay! You have a mail from your website!."/>
                 <label htmlFor="name" className="font-semibold">Name</label>
                 <input type="text" id="name" name="name" placeholder="Michael Gary Scott" className="py-2 border-2 rounded-lg border-secondary focus:border-action focus:ring-0 bg-primary" required/>
                  

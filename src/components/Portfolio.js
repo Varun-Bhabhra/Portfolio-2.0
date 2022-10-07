@@ -18,7 +18,7 @@ const Portfolio = () => {
   const { ref: myRef, inView: myElementIsVisible } = useInView({triggerOnce: true});
 
   return (
-    <div id="showcase" className="py-20 text-secondary">
+    <div id="showcase" className="py-12 text-secondary">
       <section id="portfolio" className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-32">
         <article className="space-y-24 md:space-y-0 md:grid grid-cols-2">
           <div id="header" className="">
@@ -27,8 +27,8 @@ const Portfolio = () => {
               <p className="font-jost font-regular text-base lg:text-lg sm:w-5/6 mx-auto md:mx-0">I’ve worked with some great clients, but I won’t blab about them all. Here are a few best bits.</p>
 
               <img src={ portfolioDoodle } alt="doodle" className="mx-auto md:mx-0 -scale-x-100"/>
-              <div className="sm:w-5/6 mx-auto md:mx-0">
-                <h2 className="font-light text-xl md:text-2xl lg:text-3xl xl:text-4xl">All the sites are built from scratch in the following stack:</h2>
+              <div className="hidden md:block sm:w-5/6 mx-auto md:mx-0">
+                <h2 className="font-light text-lg md:text-xl lg:text-2xl xl:text-3xl">All the sites are built from scratch in the following stack:</h2>
                 <TechItem
                   item="HTML"
                   className="text-[#E44D26] border-[#E44D26]"
@@ -87,6 +87,34 @@ const Portfolio = () => {
               para="My portfolio having the required information about me and the services I provide."
               href="http://varunbhabhra.com"
               mockup={my}
+            />
+          </div>
+
+          <div className="md:hidden sm:w-5/6 mx-auto md:mx-0 text-center">
+            <h2 className="font-light text-lg md:text-xl lg:text-2xl xl:text-3xl">All the sites are built from scratch in the following stack:</h2>
+            <TechItem
+              item="HTML"
+              className="text-[#E44D26] border-[#E44D26]"
+            />
+            <TechItem
+              item="CSS"
+              className="text-[#2965F1] border-[#2965F1]"
+            />
+            <TechItem
+              item="JavaScript"
+              className="text-[#CDB91A] border-[#CDB91A]"
+            />
+            <TechItem
+              item="React Js"
+              className="text-[#00D8FF] border-[#00D8FF]"
+            />
+            <TechItem
+              item="Node Js"
+              className="text-[#ABCB9E] border-[#ABCB9E]"
+            />
+            <TechItem
+              item="Tailwind CSS"
+              className="text-[#16BDB8] border-[#16BDB8]"
             />
           </div>
         </article>

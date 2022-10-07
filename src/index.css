@@ -256,9 +256,19 @@ body {
   }
 }
 
-.fade-in.headline {
+.fade-in-one.headline {
   opacity: 1;
   animation: fadeInHeadline 1.5s ease-out;
+}
+
+.fade-in-two.headline {
+  opacity: 1;
+  animation: fadeInHeadline 1.7s ease-out;
+}
+
+.fade-in-three.headline {
+  opacity: 1;
+  animation: fadeInHeadline 1.9s ease-out;
 }
 
 @keyframes fadeInHeadline {
@@ -274,6 +284,25 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0rem);
+  }
+}
+
+.fade-in-four.headline {
+  opacity: 1;
+  animation: fadeInResume 3.5s ease-out;
+}
+
+@keyframes fadeInResume {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 

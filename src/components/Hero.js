@@ -17,7 +17,7 @@ const Hero = () => {
 
       <section id="hero" className="max-w-screen-xl text-left sm:text-left mx-auto px-6 md:px-12 2xl:px-0 grid gap-10 sm:gap-0 justify-items-center items-center sm:grid-flow-col">
 
-        <div className="space-y-4 sm:space-y-8 text-center sm:text-left md:mb-32">
+        <div className="relative space-y-4 sm:space-y-8 text-center sm:text-left md:mb-32 z-10">
           <div className="space-y-4 md:space-y-8">
             <p className={`fade-in-one font-light text-lg xl:text-2xl xl:w-4/6 uppercase ${myElementIsVisible ? "headline" : ""}`}><em>Hey there, My name is <span className="font-bold hover:text-action transition-all">Varun</span></em></p>
             <h2 className={`fade-in-two font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-7xl capitalize ${myElementIsVisible ? "headline" : ""}`}>I design & develop <br/> Impactful websites</h2>
@@ -39,8 +39,8 @@ const Hero = () => {
           {/* <p ref={myRef} className={`fade-in-four sm:text-sm lg:text-lg ${myElementIsVisible ? "headline" : ""}`}>Looking for my resume? <br className="sm:hidden"/> <a href="https://drive.google.com/file/d/13g5GALqOvQKDk0h3jrjppRS5Hq03ag5V/view?usp=sharing" target="__blank" id="underline" className="font-bold text-action hover:tracking-wider transition-all"><em>Download Here &#x2197;</em></a></p> */}
         </div>
         
-          <img src={herobg2} alt="background" className="from_left px-2 absolute sm:w-4/6 lg:w-7/12 md:left-12 top-44 scale[1.7] lg:scale-100 overflow-hidden"/>
-          <img src={herobg} alt="background" className="from_right px-2 absolute sm:w-4/6 lg:w-7/12 md:right-12 bottom-[39rem] sm:bottom-44 scale[1.7] lg:scale100"/>
+          <img src={herobg2} alt="background" className="from_left px-2 absolute sm:w-4/6 lg:w-7/12 md:left-12 top-44 scale[1.7] lg:scale-100 z-0"/>
+          <img src={herobg} alt="background" className="from_right px-2 absolute sm:w-4/6 lg:w-7/12 md:right-12 bottom-[43rem] sm:bottom-44 scale[1.7] lg:scale100"/>
 
         <div className="md:-translate-y-28 wrapper drop-shadow-2xl pb-14">
           <div id="anim">

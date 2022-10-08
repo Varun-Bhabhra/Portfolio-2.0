@@ -58,7 +58,7 @@ const About = () => {
                   <br/>
                   <br/>
 
-                  Speaking of myself while studying B.com(Hons) in Accountancy from University of Calcutta (Surprise!), web development crossed my way and since then my journey as a developer begun. Currently I'm working as a freelance developer, I'hv always taken deep interest in designing and developing beautiful websites for my clients which focus on proving the best experience for everyone using them. Designing is something that needs patience, effort and time. I am here to provide all of it and make sure that my work becomes my identity. Being a minimalist, my belief is to make things simple and very specific. I'm open to learning and working my level best to make the results near to perfect.
+                  Speaking of myself while studying B.com(Hons) in Accountancy from University of Calcutta (Surprise!), web development crossed my way and since then my journey as a developer begun. Currently I'm working as a freelance developer, I've always taken deep interest in designing and developing beautiful websites for my clients which focus on providing the best experience for everyone using them. Designing is something that needs patience, effort and time. I am here to give in all of it and make sure that my work becomes my identity. Being a minimalist, my belief is to make things simple and very specific. I'm open to learning and working my level best to make the results near to perfect.
                   <br/>
                   <br/>
                   

@@ -33,7 +33,7 @@ const Footer = () => {
 
             <hr className="border-primary rounded-full my-10" />
 
-            <p className="text-center">All rights reserved | Copyright © 2022 Varun Bhabhra</p>
+            <p className="text-center">All rights reserved | Copyright © 2022  Varun Bhabhra</p>
 
           </section>
         </article>

@@ -14,7 +14,7 @@ const PortfolioCard = ({ head, para, href, mockup }) => {
         <div className="pt-4 rounded-xl">
           <img src={mockup} alt="Website Mockup" className="scale-110"/>
         </div>
-        <div className="px-8 lg:px-12 space-y-6">
+        <div className="px-4 lg:px-12 space-y-6">
           <h2 className="font-medium text-3xl lg:text-4xl">{head}</h2>
           <p className="text-sm md:text-lg font-jost">{para}</p>
           <ButtonGhost

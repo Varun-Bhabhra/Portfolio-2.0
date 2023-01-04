@@ -46,7 +46,7 @@ const About = () => {
           </article>
 
           <article className="flex flex-col md:flex-row">
-            <article  className="p-[2px] mb-12 md:mb-0 md:mr-4 bg-secondary rounded-full md:-translate-x-5 lg:-translate-x-7"></article>
+            <article  className="p-[1px] mb-12 md:mb-0 md:mr-4 bg-secondary rounded-full md:-translate-x-5 lg:-translate-x-7"></article>
             <div>
               <div id="header" className="bg-about-bg bg-contain bg-no-repeat bg-center">
                 <h2 className="text-center md:text-left font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">About</h2>

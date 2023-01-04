@@ -4,7 +4,8 @@ import { Link } from "react-scroll";
 import { useInView } from 'react-intersection-observer';
 
 // Imgs
-import hero_me from "../img/hero_me.webp"
+// import hero_me from "../img/hero_me.webp"
+import hero_me2 from "../img/hero_me2.webp"
 import herobg from "../img/hero_bg.svg"
 import herobg2 from "../img/hero_bg2.svg"
 
@@ -19,9 +20,9 @@ const Hero = () => {
 
         <div className="relative space-y-4 sm:space-y-8 text-center sm:text-left md:mb-32 z-10">
           <div className="space-y-4 md:space-y-8">
-            <p className={`fade-in-one font-light text-lg xl:text-2xl xl:w-4/6 uppercase ${myElementIsVisible ? "headline" : ""}`}><em>Hey there, My name is <span className="font-bold hover:text-action transition-all">Varun</span></em></p>
-            <h2 className={`fade-in-two font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-7xl capitalize ${myElementIsVisible ? "headline" : ""}`}>I design & develop <br/> Impactful websites</h2>
-            <p className={`fade-in-three font-light text-lg xl:text-2xl xl:w-6/6 ${myElementIsVisible ? "headline" : ""}`}>That are appealing, brand-accurate, & user-friendly.</p>
+            <p className={`fade-in-one font-normal text-sm xl:text-2xl xl:w-4/6 uppercase ${myElementIsVisible ? "headline" : ""}`}><em>Hello there, My name is <span className="font-bold hover:text-action transition-all">Varun</span></em></p>
+            <h2 className={`fade-in-two font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${myElementIsVisible ? "headline" : ""}`}>I help brands scale through there websites</h2>
+            <p className={`fade-in-three font-light text-lg xl:text-2xl xl:w-6/6 ${myElementIsVisible ? "headline" : ""}`}>that are appealing, brand-accurate, & user-friendly.</p>
           </div>
 
           <div ref={myRef} className={`fade-in pt-4 flex flex-col sm:flex-row gap-4 ${myElementIsVisible ? "heroBtn" : ""}`}>
@@ -44,7 +45,7 @@ const Hero = () => {
 
         <div className="md:-translate-y-28 wrapper drop-shadow-2xl pb-14">
           <div id="anim">
-            <img id="myself" src={ hero_me } alt="Mr. Smarty Pants" width="5081" height="7621" className="foreground w-full h-[40rem] md:h-screen object-cover object-bottom "/>
+            <img id="myself" src={ hero_me2 } alt="Mr. Smarty Pants" width="5081" height="7621" className="foreground w-full h-[40rem] md:h-screen object-cover"/>
           </div>
         </div>
       </section>

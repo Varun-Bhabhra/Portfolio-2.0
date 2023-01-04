@@ -19,11 +19,13 @@ const Navbar = () => {
 
   return (
     <section className="font-poppins">
-        <header className="fixed px-6 lg:px-12 xl:px-24 2xl:px-32 py-4 md:py-4">
-          <div div id="logo"><Link to="hero" spy={true} smooth={true} offset={-150} duration={800}><img src={logo} alt="vector" className="w-16 lg:w-20 h-16 lg:h-20 hover:scale-105 hover:cursor-pointer transition-all"/></Link></div>
+      <header className="fixed px-4 lg:px-12 xl:px-24 2xl:px-32 py-2 md:py-4">
+        <div div id="logo"><Link to="hero" spy={true} smooth={true} offset={-150} duration={800}><img src={logo} alt="vector" className="w-16 lg:w-20 h-16 lg:h-20 hover:scale-105 hover:cursor-pointer transition-all" /></Link></div>
         
-          <div id="toggle" className="shadow-2xl shadow-secondary/50 hover:shadow-lg hover:shadow-secondary/30 transition-all" onClick={menuToggle}></div>
-        </header>
+        {/* <a id="coffee" className="w-24 lg:w-44" href="https://www.buymeacoffee.com/bhabhravarun" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"/></a> */}
+        
+        <div id="toggle" className="shadow-2xl shadow-secondary/50 hover:shadow-lg hover:shadow-secondary/30 transition-all" onClick={menuToggle}></div>
+      </header>
 
         <div className="menu px-6 pt-12">
           <ul className="btn mt-6 space-y-8 font-medium tracking-wider text-lg lg:text-2xl">

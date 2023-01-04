@@ -8,7 +8,8 @@ import CTA from "./CTA";
 import mdp from "../img/mdp.webp";
 import zai from "../img/zai.webp";
 import tsot from "../img/tsot.webp";
-import pyalee from "../img/pyalee.webp";
+// import pyalee from "../img/pyalee.webp";
+import pmc from "../img/pmc.webp";
 import my from "../img/my.webp";
 import portfolioDoodle from "../img/portfolioDoodle.svg";
 import ctaDoodle2 from "../img/ctaDoodle2.svg"
@@ -65,11 +66,11 @@ const Portfolio = () => {
               mockup={mdp}
             />
             <PortfolioCard
-              head="The Shades of Trades"
-              para="Get a head start in your trading career and learn a skill for a
-              lifetime with The Shades of Trades.A trading course website which simplifies trading with intrinsic concepts of price action techniques and procedures."
-              href="http://theshadesoftrades.co.in"
-              mockup={tsot}
+               head="Punjab Medicare"
+              para="Welcome to PMC healing through nature.
+              For a healthy mind and body, you can't overlook Ayurvedic Medicine. They have been in business for 60+ years."
+              href="http://punjabmedicare.com"
+              mockup={pmc}
             />
             <PortfolioCard
               head="Zai Makeover Studio"
@@ -78,10 +79,11 @@ const Portfolio = () => {
               mockup={zai}
             />
             <PortfolioCard
-              head="Pyalee"
-              para="India's one of the best Tea Bag & Tea Cup company."
-              href="http://pyalee.co.in"
-              mockup={pyalee}
+              head="The Shades of Trades"
+              para="Get a head start in your trading career and learn a skill for a
+              lifetime with The Shades of Trades.A trading course website which simplifies trading with intrinsic concepts of price action techniques and procedures."
+              href="http://theshadesoftrades.co.in"
+              mockup={tsot}
             />
             <PortfolioCard
               head="My Portfolio"

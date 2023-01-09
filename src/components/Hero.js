@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="relative space-y-4 sm:space-y-8 text-center sm:text-left md:mb-32 z-10">
           <div className="space-y-4 md:space-y-8">
             <p className={`fade-in-one font-normal text-sm xl:text-2xl xl:w-4/6 uppercase ${myElementIsVisible ? "headline" : ""}`}><em>Hello there, My name is <span className="font-bold hover:text-action transition-all">Varun</span></em></p>
-            <h2 className={`fade-in-two font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${myElementIsVisible ? "headline" : ""}`}>I help brands scale through there websites</h2>
+            <h2 className={`fade-in-two font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${myElementIsVisible ? "headline" : ""}`}>I help brands scale through their websites</h2>
             <p className={`fade-in-three font-light text-lg xl:text-2xl xl:w-6/6 ${myElementIsVisible ? "headline" : ""}`}>that are appealing, brand-accurate, & user-friendly.</p>
           </div>
 

@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import PortfolioCard from "./PortfolioCard";
 import TechItem from "./TechItem";
 import CTA from "./CTA";
+import TempCTA from "./TempCTA";
 
 // Imgs
 import mdp from "../img/mdp.webp";
@@ -12,7 +13,7 @@ import tsot from "../img/tsot.webp";
 import pmc from "../img/pmc.webp";
 import my from "../img/my.webp";
 import portfolioDoodle from "../img/portfolioDoodle.svg";
-import ctaDoodle2 from "../img/ctaDoodle2.svg"
+import ctaDoodle2 from "../img/ctaDoodle2.svg";
 
 const Portfolio = () => {
 
@@ -20,6 +21,13 @@ const Portfolio = () => {
 
   return (
     <div id="showcase" className="py-12 text-secondary">
+      <section className="max-w-screen-xl mx-auto">
+        <TempCTA
+          head="New Plan"
+          text="Unlock the full potential of your business with our new online presence solution. Starting at just ₹9,999/-"
+          tags="#OnlinePresence #BusinessGrowth"
+        />
+      </section>
       <section id="portfolio" className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-32">
         <article className="space-y-24 md:space-y-0 md:grid grid-cols-2">
           <div id="header" className="">

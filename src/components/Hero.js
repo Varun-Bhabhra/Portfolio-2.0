@@ -9,6 +9,7 @@ import hero_me2 from "../img/hero_me2.webp"
 import herobg from "../img/hero_bg.svg"
 import herobg2 from "../img/hero_bg2.svg"
 
+
 const Hero = () => {
 
   const { ref: myRef, inView: myElementIsVisible } = useInView({ triggerOnce: true });
@@ -19,6 +20,7 @@ const Hero = () => {
       <section id="hero" className="max-w-screen-xl text-left sm:text-left mx-auto px-6 md:px-12 2xl:px-0 grid gap-10 sm:gap-0 justify-items-center items-center sm:grid-flow-col">
 
         <div className="relative space-y-4 sm:space-y-8 text-center sm:text-left md:mb-32 z-10">
+        <Link to="new" spy={true} smooth={true} offset={-100} duration={800} className="text-xs md:text-lg inline-block bg-action text-white py-2 px-4 rounded-md font-medium cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-transform">View New Plan</Link>
           <div className="space-y-4 md:space-y-8">
             <p className={`fade-in-one font-normal text-sm xl:text-2xl xl:w-4/6 uppercase ${myElementIsVisible ? "headline" : ""}`}><em>Hello there, My name is <span className="font-bold hover:text-action transition-all">Varun</span></em></p>
             <h2 className={`fade-in-two font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${myElementIsVisible ? "headline" : ""}`}>I help brands scale through their websites</h2>
@@ -49,7 +51,6 @@ const Hero = () => {
           </div>
         </div>
       </section>
-
     </div>
   )
 };

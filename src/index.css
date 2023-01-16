@@ -376,3 +376,13 @@ body {
     transform: translateX(0rem);
   }
 }
+
+/* New CTA Styles */
+.cta_headline,
+.cta_price {
+  filter: drop-shadow(2px 6px 32px #f7df1e);
+}
+
+.new_cta:hover .cta_mockup {
+  transform: scale(1.09);
+}

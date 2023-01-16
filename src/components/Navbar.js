@@ -22,8 +22,6 @@ const Navbar = () => {
       <header className="fixed px-4 lg:px-12 xl:px-24 2xl:px-32 py-2 md:py-4">
         <div div id="logo"><Link to="hero" spy={true} smooth={true} offset={-150} duration={800}><img src={logo} alt="vector" className="w-16 lg:w-20 h-16 lg:h-20 hover:scale-105 hover:cursor-pointer transition-all" /></Link></div>
         
-        {/* <a id="coffee" className="w-24 lg:w-44" href="https://www.buymeacoffee.com/bhabhravarun" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"/></a> */}
-        
         <div id="toggle" className="shadow-2xl shadow-secondary/50 hover:shadow-lg hover:shadow-secondary/30 transition-all" onClick={menuToggle}></div>
       </header>
 

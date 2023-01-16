@@ -23,6 +23,7 @@ module.exports = {
         'about-bg': "url('/src/img/about_bg.svg')",
         'testimonials-bg': "url('/src/img/testimonials_bg.svg')",
         'portfolio-bg': "url('/src/img/portfolio_bg.svg')",
+        'newcta-bg': "url('/src/img/newcta_bg.svg')",
       }
     },
   },

@@ -208,7 +208,7 @@ body {
 }
 
 #anim::before {
-  background-color: var(--action);
+  background-color: var(--extra);
   animation: showImg 3s ease;
 }
 

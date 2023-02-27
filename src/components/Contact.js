@@ -35,7 +35,7 @@ const Contact = () => {
                 <label htmlFor="message" className="font-semibold mt-10">Message</label>
                 <textarea id="message" name="message" rows="4" cols="50" placeholder="Don't ever, for any reason, do anything to anyone for any reason ever, no matter what, no matter where, or who, or where you've been... ever, for any reason whatsoever..." className="py-6 border-2 rounded-lg border-secondary focus:border-action focus:ring-0 bg-primary" required></textarea>
               </div>
-              <button type="submit" className="mt-20 md:w-3/6 text-center text-primary bg-action border-2 border-action font-semibold py-3 w-full text-sm lg:text-lg rounded-full cursor-pointer hover:scale105 hover:-translate-y1 hover:shadow-lg hover:shadow-action/30 hover:-translate-y-[2px] transition-all duration-200">Send</button>
+              <button type="submit" className="mt-20 md:w-3/6 text-center text-primary bg-action border-2 border-action font-semibold py-3 w-full text-sm lg:text-lg rounded-xl cursor-pointer hover:scale105 hover:-translate-y1 hover:shadow-lg hover:shadow-action/30 hover:-translate-y-[2px] transition-all duration-200">Send</button>
             </form>
           </div>
         </article>

@@ -6,7 +6,6 @@ import About from "./About";
 import Portfolio from "./Portfolio";
 import Testimonials from "./Testimonials";
 import Contact from "./Contact";
-import Environment from "./Environment";
 import Footer from "./Footer";
 
 const App = () => {
@@ -20,7 +19,6 @@ const App = () => {
       <About />
       <Testimonials />
       <Contact />
-      <Environment />
       <Footer />
     </div>
   )

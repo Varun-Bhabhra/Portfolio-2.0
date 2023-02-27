@@ -17,7 +17,7 @@ const Footer = () => {
     <div id="showcase" className="text-primary">
       <section className="bg-secondary">
         <article className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24">
-          <section ref={myRef} className={`fade-in py-12 ${myElementIsVisible ? "appear" : ""}`}>
+          <section ref={myRef} className={`fadein py-12 ${myElementIsVisible ? "appear" : ""}`}>
             <article className="flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0">
               <div className="flex flex-col md:flex-row gap-6 items-center text-center md:text-left">
                 <img src={footer_me} alt="Sexy Pants!" className="w-16 h-16 rounded-full object-cover object-center border-2 border-primary" />
@@ -33,7 +33,7 @@ const Footer = () => {
 
             <hr className="border-primary rounded-full my-10" />
 
-            <p className="text-center">All rights reserved | Copyright © 2022  Varun Bhabhra</p>
+            <p className="text-center">All rights reserved | Copyright © 2023 Varun Bhabhra</p>
 
           </section>
         </article>

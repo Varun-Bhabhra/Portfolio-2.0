@@ -20,7 +20,8 @@ const Hero = () => {
       <section id="hero" className="max-w-screen-xl text-left sm:text-left mx-auto px-6 md:px-12 2xl:px-0 grid gap-10 sm:gap-0 justify-items-center items-center sm:grid-flow-col">
 
         <div className="relative space-y-4 sm:space-y-8 text-center sm:text-left md:mb-32 z-10">
-        <Link to="new" spy={true} smooth={true} offset={-100} duration={800} className="text-xs md:text-lg inline-block bg-action text-white py-2 px-4 rounded-md font-medium cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-transform">View New Plan</Link>
+          <Link to="new" spy={true} smooth={true} offset={-100} duration={800} className="text-xs md:text-base inline-block bg-action text-white py-2 px-4 rounded-xl font-base cursor-pointer hover:shadow-lg hover:shadow-action/30 hover:-translate-y-[2px] transition-all"><em>View New Plan</em></Link>
+          
           <div className="space-y-4 md:space-y-8">
             <p className={`fade-in-one font-normal text-sm xl:text-2xl xl:w-4/6 uppercase ${myElementIsVisible ? "headline" : ""}`}><em>Hello there, My name is <span className="font-bold hover:text-action transition-all">Varun</span></em></p>
             <h2 className={`fade-in-two font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${myElementIsVisible ? "headline" : ""}`}>I help brands scale through their websites</h2>
@@ -35,11 +36,10 @@ const Hero = () => {
             />
 
             <div className="sm:w-3/12 transition-all lg:pt-6 relative z-10">
-              <Link to="portfolio" spy={true} smooth={true} offset={-160} duration={800} target="__blank" className="inline-block text-center text-action border-2 border-action hover:bg-action/10 font-semibold py-3 w-full text-sm lg:text-lg rounded-full cursor-pointer hover:scale105 hover:-translate-y1 hover:shadow-lg hover:shadow-action/30 transition-all hover:-translate-y-[2px] duration-200">My Work</Link>
+              <Link to="portfolio" spy={true} smooth={true} offset={-160} duration={800} target="__blank" className="inline-block text-center text-action border-2 border-action hover:bg-action/10 font-semibold py-3 w-full text-sm lg:text-lg rounded-xl cursor-pointer hover:scale105 hover:-translate-y1 hover:shadow-lg hover:shadow-action/30 transition-all hover:-translate-y-[2px] duration-200">My Work </Link>
             </div>
 
           </div>
-          {/* <p ref={myRef} className={`fade-in-four sm:text-sm lg:text-lg ${myElementIsVisible ? "headline" : ""}`}>Looking for my resume? <br className="sm:hidden"/> <a href="https://drive.google.com/file/d/13g5GALqOvQKDk0h3jrjppRS5Hq03ag5V/view?usp=sharing" target="__blank" id="underline" className="font-bold text-action hover:tracking-wider transition-all"><em>Download Here &#x2197;</em></a></p> */}
         </div>
         
           <img src={herobg2} alt="background" className="from_left px-2 absolute sm:w-4/6 lg:w-7/12 md:left-12 top-44 scale[1.7] lg:scale-100 z-0"/>
@@ -47,7 +47,7 @@ const Hero = () => {
 
         <div className="md:-translate-y-28 wrapper drop-shadow-2xl pb-14">
           <div id="anim">
-            <img id="myself" src={ hero_me2 } alt="Mr. Smarty Pants" width="5081" height="7621" className="foreground w-full h-[40rem] md:h-screen object-cover"/>
+            <img id="myself" src={ hero_me2 } alt="Mr. Smarty Pants" width="2236" height="4000" className="foreground w-full h-[40rem] md:h-[60rem] object-cover"/>
           </div>
         </div>
       </section>

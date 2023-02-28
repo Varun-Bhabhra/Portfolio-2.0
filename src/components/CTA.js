@@ -19,7 +19,7 @@ const CTA = ({ img, head, text }) => {
             url="https://calendly.com/varunbhabhra/30min"
             rootElement={document.getElementById("root")}
             text="Schedule A Call"
-            className="w-full py-3 sm:w-3/6 lg:w-3/6 text-primary bg-action border-2 border-action font-semibold  text-sm lg:text-lg rounded-xl cursor-pointer hover:scale105 hover:-translate-y1 hover:shadow-lg hover:shadow-action/30 hover:-translate-y-[2px] transition-all duration-200"
+            className="w-full py-3 sm:w-3/6 lg:w-3/6 text-primary bg-action border-2 border-action font-semibold  text-sm lg:text-lg rounded-lg cursor-pointer hover:scale105 hover:-translate-y1 hover:shadow-lg hover:shadow-action/30 hover:-translate-y-[2px] transition-all duration-200"
           />
         </div>
       </div>

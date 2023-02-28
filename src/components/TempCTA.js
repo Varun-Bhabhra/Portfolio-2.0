@@ -27,9 +27,9 @@ const TempCTA = ({ head, text, tags }) => {
           <span className="text-sm 2xl:text-xl text-[#CBCBCB]/40">{tags}</span>
         </div>
 
-        <div className="h-[3rem] md:h-16 xl:h-20 w-4/6 md:w-3/6 rounded-lg md:rounded-2xl bg-gradient-to-r from-[#FAFF00] to-[#7AFF53] p-[2px] ">
+        <div className="h-[3rem] md:h-16 xl:h-20 w-4/6 md:w-3/6 rounded-lg bg-gradient-to-r from-[#FAFF00] to-[#7AFF53] p-[2px] ">
           <Link to="contact" spy={true} smooth={true} offset={-100} duration={800}>
-            <div className='flex h-full w-full items-center justify-center bg-[#012023] back rounded-lg md:rounded-2xl cursor-pointer hover:-translate-y-1 transition-transform'>
+            <div className='flex h-full w-full items-center justify-center bg-[#012023] back rounded-lg cursor-pointer hover:-translate-y-1 transition-transform'>
               <span className="cta_price font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FAFF00] to-[#7AFF53] text-2xl md:text-2xl lg:text-4xl xl:text5xl">₹ 19,999/-</span>
             </div>
           </Link>

@@ -52,7 +52,7 @@ const About = () => {
                 <h2 className="text-center md:text-left font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">About</h2>
               </div>
               <div ref={myRef} className={`fade-in mt-12 space-y-3 text-justify ${myElementIsVisible ? "appear" : ""}`}>
-                <p className="">
+                <p className="text-sm">
                   Hey👋, my name is Varun Bhabhra! I'm a self-taught developer & designer from West Bengal, India, who is really into unique designs, user experience and writing clean code.
 
                   <br/>

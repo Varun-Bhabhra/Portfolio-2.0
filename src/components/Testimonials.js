@@ -25,7 +25,7 @@ const Testimonials = () => {
             </div>
           </div>
 
-          <div ref={myRef} className={`fade-in h-[35rem] md:h-[35rem] 2xl:h-[25rem] dark ${myElementIsVisible ? "appear" : ""}`}>
+          <div ref={myRef} className={`fade-in h-[28rem] md:h-[35rem] 2xl:h-[25rem] dark ${myElementIsVisible ? "appear" : ""}`}>
             <Carousel indicators={true} slideInterval={10000}>
               <Testimonial
                 img={mdpReview}

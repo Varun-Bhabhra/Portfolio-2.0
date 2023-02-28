@@ -21,7 +21,7 @@ const Testimonial = ({ img, name, place, href, text }) => {
             <a href={href}><img src={instagramDark} alt="social icons" className="w-10 cursor-pointer hover:-translate-y-1 transition-all"/></a>
             <a href={href}><img src={twitterDark} alt="social icons" className="w-10 cursor-pointer hover:-translate-y-1 transition-all"/></a>
           </article> */}
-          <p className="">{ text }</p>
+          <p className="text-sm">{ text }</p>
         </div>
     </section>
   )

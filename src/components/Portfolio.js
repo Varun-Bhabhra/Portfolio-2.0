@@ -1,5 +1,5 @@
 import React from "react";
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 import PortfolioCard from "./PortfolioCard";
 import TechItem from "./TechItem";
 import CTA from "./CTA";
@@ -16,52 +16,55 @@ import portfolioDoodle from "../img/portfolioDoodle.svg";
 import ctaDoodle2 from "../img/ctaDoodle2.svg";
 
 const Portfolio = () => {
-
-  const { ref: myRef, inView: myElementIsVisible } = useInView({triggerOnce: true});
+  const { ref: myRef, inView: myElementIsVisible } = useInView({
+    triggerOnce: true,
+  });
 
   return (
     <div id="showcase" className="py-12 text-secondary">
       <section className="max-w-screen-xl mx-auto">
         <TempCTA
           head="New Plan"
-          text="Unlock the full potential of your business with our new online presence solution. Starting at just ₹19,999/-"
+          text="Unlock the full potential of your business with our new online presence solution. Starting at just ₹39,999/-"
           tags="#OnlinePresence #BusinessGrowth"
         />
       </section>
-      <section id="portfolio" className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-32">
+      <section
+        id="portfolio"
+        className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-32"
+      >
         <article className="space-y-24 md:space-y-0 md:grid grid-cols-2">
           <div id="header" className="">
-            <div ref={myRef} className={`fade-in md:sticky top-36 space-y-8 bg-portfolio-bg bg-contain bg-no-repeat text-center md:text-left ${myElementIsVisible ? "appear" : ""}`}>
-              <h2 className="font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">Portfolio</h2>
-              <p className="font-jost font-regular text-base lg:text-lg sm:w-5/6 mx-auto md:mx-0">I’ve worked with some great clients, but I won’t blab about them all. Here are a few best bits.</p>
+            <div
+              ref={myRef}
+              className={`fade-in md:sticky top-36 space-y-8 bg-portfolio-bg bg-contain bg-no-repeat text-center md:text-left ${
+                myElementIsVisible ? "appear" : ""
+              }`}
+            >
+              <h2 className="font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">
+                Portfolio
+              </h2>
+              <p className="font-jost font-regular text-base lg:text-lg sm:w-5/6 mx-auto md:mx-0">
+                I’ve worked with some great clients, but I won’t blab about them
+                all. Here are a few best bits.
+              </p>
 
-              <img src={ portfolioDoodle } alt="doodle" className="mx-auto md:mx-0 -scale-x-100"/>
+              <img
+                src={portfolioDoodle}
+                alt="doodle"
+                className="mx-auto md:mx-0 -scale-x-100"
+              />
               <div className="hidden md:block sm:w-5/6 mx-auto md:mx-0">
-                <h2 className="font-light text-lg lg:text-xl xl:text-2xl">All the sites on your right are built from scratch in the following stack:</h2>
-                <TechItem
-                  item="React Js"
-                  className="text-[#00D8FF]"
-                />
-                <TechItem
-                  item="Node Js"
-                  className="text-[#ABCB9E]"
-                />
-                <TechItem
-                  item="Tailwind CSS"
-                  className="text-[#16BDB8]"
-                />
-                <TechItem
-                  item="HTML"
-                  className="text-[#E44D26]"
-                />
-                <TechItem
-                  item="CSS"
-                  className="text-[#2965F1]"
-                />
-                <TechItem
-                  item="JavaScript"
-                  className="text-[#CDB91A]"
-                />
+                <h2 className="font-light text-lg lg:text-xl xl:text-2xl">
+                  All the sites on your right are built from scratch in the
+                  following stack:
+                </h2>
+                <TechItem item="React Js" className="text-[#00D8FF]" />
+                <TechItem item="Node Js" className="text-[#ABCB9E]" />
+                <TechItem item="Tailwind CSS" className="text-[#16BDB8]" />
+                <TechItem item="HTML" className="text-[#E44D26]" />
+                <TechItem item="CSS" className="text-[#2965F1]" />
+                <TechItem item="JavaScript" className="text-[#CDB91A]" />
               </div>
             </div>
           </div>
@@ -74,7 +77,7 @@ const Portfolio = () => {
               mockup={mdp}
             />
             <PortfolioCard
-               head="Punjab Medicare"
+              head="Punjab Medicare"
               para="Welcome to PMC healing through nature.
               For a healthy mind and body, you can't overlook Ayurvedic Medicine. They have been in business for 60+ years."
               href="http://punjabmedicare.com"
@@ -102,31 +105,15 @@ const Portfolio = () => {
           </div>
 
           <div className="md:hidden sm:w-5/6 mx-auto md:mx-0 text-center">
-            <h2 className="font-light text-lg">All the above sites are built from scratch in the following stack:</h2>
-            <TechItem
-              item="React Js"
-              className="text-[#00D8FF]"
-            />
-            <TechItem
-              item="Node Js"
-              className="text-[#ABCB9E]"
-            />
-            <TechItem
-              item="Tailwind CSS"
-              className="text-[#16BDB8]"
-            />
-            <TechItem
-              item="HTML"
-              className="text-[#E44D26]"
-            />
-            <TechItem
-              item="CSS"
-              className="text-[#2965F1]"
-            />
-            <TechItem
-              item="JavaScript"
-              className="text-[#CDB91A]"
-            />
+            <h2 className="font-light text-lg">
+              All the above sites are built from scratch in the following stack:
+            </h2>
+            <TechItem item="React Js" className="text-[#00D8FF]" />
+            <TechItem item="Node Js" className="text-[#ABCB9E]" />
+            <TechItem item="Tailwind CSS" className="text-[#16BDB8]" />
+            <TechItem item="HTML" className="text-[#E44D26]" />
+            <TechItem item="CSS" className="text-[#2965F1]" />
+            <TechItem item="JavaScript" className="text-[#CDB91A]" />
           </div>
         </article>
 
@@ -137,7 +124,7 @@ const Portfolio = () => {
         />
       </section>
     </div>
-  )
+  );
 };
 
 export default Portfolio;

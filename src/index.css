@@ -385,3 +385,9 @@ body {
 .new_cta:hover .cta_mockup {
   transform: scale(1.09);
 }
+
+/* FAQ Styles */
+
+.show_answer {
+  display: none;
+}

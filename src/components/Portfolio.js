@@ -25,7 +25,7 @@ const Portfolio = () => {
       <section className="max-w-screen-xl mx-auto">
         <TempCTA
           head="New Plan"
-          text="Unlock the full potential of your business with our new online presence solution. Starting at just ₹39,999/-"
+          text="Unlock the full potential of your business with our new online presence solution. Starting at just ₹49,999/-"
           tags="#OnlinePresence #BusinessGrowth"
         />
       </section>
@@ -59,12 +59,12 @@ const Portfolio = () => {
                   All the sites on your right are built from scratch in the
                   following stack:
                 </h2>
-                <TechItem item="React Js" className="text-[#00D8FF]" />
-                <TechItem item="Node Js" className="text-[#ABCB9E]" />
-                <TechItem item="Tailwind CSS" className="text-[#16BDB8]" />
-                <TechItem item="HTML" className="text-[#E44D26]" />
-                <TechItem item="CSS" className="text-[#2965F1]" />
-                <TechItem item="JavaScript" className="text-[#CDB91A]" />
+                <TechItem item="React Js" />
+                <TechItem item="Node Js" />
+                <TechItem item="Tailwind CSS" />
+                <TechItem item="HTML" />
+                <TechItem item="CSS" />
+                <TechItem item="JavaScript" />
               </div>
             </div>
           </div>
@@ -104,16 +104,16 @@ const Portfolio = () => {
             />
           </div>
 
-          <div className="md:hidden sm:w-5/6 mx-auto md:mx-0 text-center">
+          <div className="md:hidden sm:w-5/6 mx-auto md:mx-0">
             <h2 className="font-light text-lg">
               All the above sites are built from scratch in the following stack:
             </h2>
-            <TechItem item="React Js" className="text-[#00D8FF]" />
-            <TechItem item="Node Js" className="text-[#ABCB9E]" />
-            <TechItem item="Tailwind CSS" className="text-[#16BDB8]" />
-            <TechItem item="HTML" className="text-[#E44D26]" />
-            <TechItem item="CSS" className="text-[#2965F1]" />
-            <TechItem item="JavaScript" className="text-[#CDB91A]" />
+            <TechItem item="React Js" />
+            <TechItem item="Node Js" />
+            <TechItem item="Tailwind CSS" />
+            <TechItem item="HTML" />
+            <TechItem item="CSS" />
+            <TechItem item="JavaScript" />
           </div>
         </article>
 

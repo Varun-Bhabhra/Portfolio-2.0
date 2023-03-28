@@ -5,11 +5,11 @@ import Services from "./Services";
 import About from "./About";
 import Portfolio from "./Portfolio";
 import Testimonials from "./Testimonials";
+import FAQs from "./FAQs";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
 const App = () => {
-
   return (
     <div id="showcase" className="font-poppins">
       <Navbar />
@@ -18,10 +18,11 @@ const App = () => {
       <Services />
       <About />
       <Testimonials />
+      <FAQs />
       <Contact />
       <Footer />
     </div>
-  )
+  );
 };
 
 export default App;

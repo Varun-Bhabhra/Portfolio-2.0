@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-scroll";
 import { useInView } from "react-intersection-observer";
 import { PopupButton } from "react-calendly";
@@ -61,12 +60,6 @@ const Hero = () => {
               myElementIsVisible ? "heroBtn" : ""
             }`}
           >
-            {/* <Button
-              to="contact"
-              className="sm:w-3/12 transition-all lg:pt-6 relative z-10"
-              text="Hire Me"
-            /> */}
-
             <PopupButton
               url="https://calendly.com/varunbhabhra/30min"
               rootElement={document.getElementById("root")}

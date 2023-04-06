@@ -1,6 +1,6 @@
 import React from "react";
-import { useInView } from 'react-intersection-observer';
-import Testimonial from "./Testimonial"
+import { useInView } from "react-intersection-observer";
+import Testimonial from "./Testimonial";
 import { Carousel } from "flowbite-react";
 
 // Imgs
@@ -9,23 +9,43 @@ import mdpReview from "../img/mdpReview.webp";
 import zaiReview from "../img/zaiReview.webp";
 
 const Testimonials = () => {
-
-  const { ref: myRef, inView: myElementIsVisible } = useInView({triggerOnce: true});
+  const { ref: myRef, inView: myElementIsVisible } = useInView({
+    triggerOnce: true,
+  });
 
   return (
     <div id="showcase" className="py-20 text-secondary">
-      <section id="testimonial" className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24">
+      <section
+        id="testimonial"
+        className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-24"
+      >
         <article className="space-y-24 md:space-y-0 md:grid grid-cols-2 items-center">
           <div id="header" className="">
-            <div className="md:sticky top-36 space-y-8 bg-testimonials-bg bg-contain bg-no-repeat text-center md:text-left">
-              <h2 className="font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">Testimonial</h2>
-              <p className="font-jost font-regular text-base lg:text-lg sm:w-5/6 mx-auto md:mx-0">Have a look what my clients think about my work!</p>
+            <div className="md:sticky top-36 space-y-8 bgtestimonials-bg bg-contain bg-no-repeat text-center md:text-left">
+              <h2 className="font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">
+                Testimonial
+              </h2>
+              <p className="font-jost font-regular text-base lg:text-lg sm:w-5/6 mx-auto md:mx-0">
+                Have a look what my clients think about my work!
+              </p>
 
-              <img ref={myRef} src={ testimonialDoodle } alt="doodle" className={`fade-in mx-auto md:mx-0 ${myElementIsVisible ? "appear" : ""}`}/>
+              <img
+                ref={myRef}
+                src={testimonialDoodle}
+                alt="doodle"
+                className={`fade-in mx-auto md:mx-0 ${
+                  myElementIsVisible ? "appear" : ""
+                }`}
+              />
             </div>
           </div>
 
-          <div ref={myRef} className={`fade-in h-[28rem] md:h-[35rem] 2xl:h-[25rem] dark ${myElementIsVisible ? "appear" : ""}`}>
+          <div
+            ref={myRef}
+            className={`fade-in h-[28rem] md:h-[35rem] 2xl:h-[25rem] dark ${
+              myElementIsVisible ? "appear" : ""
+            }`}
+          >
             <Carousel indicators={true} slideInterval={10000}>
               <Testimonial
                 img={mdpReview}
@@ -53,7 +73,7 @@ const Testimonials = () => {
         </article>
       </section>
     </div>
-  )
+  );
 };
 
 export default Testimonials;

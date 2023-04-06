@@ -31,7 +31,7 @@ const About = () => {
           <article className="">
             <div
               id="header"
-              className="bg-skills-bg bg-contain bg-no-repeat bg-center"
+              className="bgskills-bg bg-contain bg-no-repeat bg-center"
             >
               <h2 className="text-center md:text-left font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">
                 Skills
@@ -43,18 +43,66 @@ const About = () => {
                 myElementIsVisible ? "appear" : ""
               }`}
             >
-              <img src={html} alt="skill icon" className="w-12" />
-              <img src={js} alt="skill icon" className="w-12" />
-              <img src={react} alt="skill icon" className="w-12" />
-              <img src={nodejs} alt="skill icon" className="w-12" />
-              <img src={css} alt="skill icon" className="w-12" />
-              <img src={tailwind} alt="skill icon" className="w-12" />
-              <img src={sass} alt="skill icon" className="w-12" />
-              <img src={express} alt="skill icon" className="w-12" />
-              <img src={postman} alt="skill icon" className="w-12" />
-              <img src={git} alt="skill icon" className="w-12" />
-              <img src={gh} alt="skill icon" className="w-12" />
-              <img src={figma} alt="skill icon" className="w-8" />
+              <img
+                src={html}
+                alt="skill icon"
+                className="w-12 hover:scale-110 transition-transform"
+              />
+              <img
+                src={js}
+                alt="skill icon"
+                className="w-12 hover:scale-110 transition-transform"
+              />
+              <img
+                src={react}
+                alt="skill icon"
+                className="w-12 hover:scale-110 transition-transform"
+              />
+              <img
+                src={nodejs}
+                alt="skill icon"
+                className="w-12 hover:scale-110 transition-transform"
+              />
+              <img
+                src={css}
+                alt="skill icon"
+                className="w-12 hover:scale-110 transition-transform"
+              />
+              <img
+                src={tailwind}
+                alt="skill icon"
+                className="w-12 hover:scale-110 transition-transform"
+              />
+              <img
+                src={sass}
+                alt="skill icon"
+                className="w-12 hover:scale-110 transition-transform"
+              />
+              <img
+                src={express}
+                alt="skill icon"
+                className="w-12 hover:scale-110 transition-transform"
+              />
+              <img
+                src={postman}
+                alt="skill icon"
+                className="w-12 hover:scale-110 transition-transform"
+              />
+              <img
+                src={git}
+                alt="skill icon"
+                className="w-12 hover:scale-110 transition-transform"
+              />
+              <img
+                src={gh}
+                alt="skill icon"
+                className="w-12 hover:scale-110 transition-transform"
+              />
+              <img
+                src={figma}
+                alt="skill icon"
+                className="w-8 hover:scale-110 transition-transform"
+              />
             </div>
           </article>
 
@@ -63,7 +111,7 @@ const About = () => {
             <div>
               <div
                 id="header"
-                className="bg-about-bg bg-contain bg-no-repeat bg-center"
+                className="bgabout-bg bg-contain bg-no-repeat bg-center"
               >
                 <h2 className="text-center md:text-left font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">
                   About

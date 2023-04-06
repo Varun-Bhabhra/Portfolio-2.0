@@ -17,7 +17,7 @@ const Contact = () => {
       >
         <article className="space-y-24 md:space-y-0 md:grid grid-cols-2">
           <div id="header" className="">
-            <div className="space-y-8 bg-contact-bg bg-contain bg-no-repeat text-center md:text-left">
+            <div className="space-y-8 bgcontact-bg bg-contain bg-no-repeat text-center md:text-left">
               <h2 className="font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">
                 Get In Touch!
               </h2>

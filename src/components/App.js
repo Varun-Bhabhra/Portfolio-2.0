@@ -5,7 +5,7 @@ import Services from "./Services";
 import About from "./About";
 import Portfolio from "./Portfolio";
 import Testimonials from "./Testimonials";
-import FAQs from "./FAQs";
+// import FAQ from "./FAQ";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
@@ -18,7 +18,7 @@ const App = () => {
       <Services />
       <About />
       <Testimonials />
-      <FAQs />
+      {/* <FAQ /> */}
       <Contact />
       <Footer />
     </div>

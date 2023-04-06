@@ -37,17 +37,26 @@ const TempCTA = ({ head, text, tags }) => {
 
       <div
         ref={myRef}
-        className={`fade-in space-y-4 sm:space-y-20 my-8 sm:w-3/6 md:w-4/6 px-6 lg:px-6 ${
+        className={`fade-in space-y-6 sm:space-y-12 my-8 sm:w-3/6 md:w-4/6 px-6 lg:px-6 ${
           myElementIsVisible ? "appear" : ""
         }`}
       >
-        <div className="space-y-4 -translate-y6">
+        <div className="space-y-4">
           <h2 className="cta_headline font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FAFF00] to-[#7AFF53] text-3xl md:text-3xl lg:text-4xl xl:text-5xl uppercase relative z-10">
             {head}
           </h2>
 
           <p className="text-sm md:text-base 2xl:text-xl">{text}</p>
           <span className="text-sm 2xl:text-xl text-[#CBCBCB]/40">{tags}</span>
+
+          <aside className="md:space-x-2 text-sm text-secondary font-semibold flex flex-col md:flex-row gap-2">
+            <span className="bg-gradient-to-bl from-[#FAFF00] to-[#7AFF53] rounded-md px-3 py-1">
+              One Pager Website
+            </span>
+            <span className="bg-gradient-to-bl from-[#FAFF00] to-[#7AFF53] rounded-md px-3 py-1">
+              10 Social Media Posts
+            </span>
+          </aside>
         </div>
 
         <div className="h-[3rem] md:h-16 xl:h-20 w-4/6 md:w-3/6 rounded-lg bg-gradient-to-r from-[#FAFF00] to-[#7AFF53] p-[2px] ">
@@ -59,8 +68,8 @@ const TempCTA = ({ head, text, tags }) => {
             duration={800}
           >
             <div className="flex h-full w-full items-center justify-center bg-[#012023] back rounded-lg cursor-pointer hover:-translate-y-1 transition-transform">
-              <span className="cta_price font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FAFF00] to-[#7AFF53] text-2xl md:text-2xl lg:text-4xl xl:text5xl">
-                ₹ 49,999/-
+              <span className="cta_price font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FAFF00] to-[#7AFF53] text-2xl md:text-2xl lg:text-4xl xl:text-5xl">
+                $649<span className="text-sm">(ONLY)</span>
               </span>
             </div>
           </Link>

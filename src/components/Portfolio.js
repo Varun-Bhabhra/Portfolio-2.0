@@ -25,7 +25,7 @@ const Portfolio = () => {
       <section className="max-w-screen-xl mx-auto">
         <TempCTA
           head="New Plan"
-          text="Unlock the full potential of your business with our new online presence solution. Starting at just ₹49,999/-"
+          text="Unlock the full potential of your business with our new online presence solution. Starting at just $649"
           tags="#OnlinePresence #BusinessGrowth"
         />
       </section>
@@ -37,7 +37,7 @@ const Portfolio = () => {
           <div id="header" className="">
             <div
               ref={myRef}
-              className={`fade-in md:sticky top-36 space-y-8 bg-portfolio-bg bg-contain bg-no-repeat text-center md:text-left ${
+              className={`fade-in md:sticky top-36 space-y-8 bgportfolio-bg bg-contain bg-no-repeat text-center md:text-left ${
                 myElementIsVisible ? "appear" : ""
               }`}
             >

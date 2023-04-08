@@ -20,9 +20,8 @@ const FAQ = () => {
         <Accordion flush={true}>
           <Accordion.Panel>
             <Accordion.Title>
-              <div className="text-secondary text-lg">
-                What is the initial investment required to create a website with
-                optimal performance?
+              <div className="text-secondary md:text-lg">
+                What is the initial investment needed to create a website?
               </div>
             </Accordion.Title>
             <Accordion.Content>
@@ -31,7 +30,7 @@ const FAQ = () => {
                   The cost of getting started with a website will vary depending
                   on the project's scope and requirements. As a point of
                   reference, previous projects have ranged from{" "}
-                  <em className="font-bold">$1,500 - $7,000</em>
+                  <em className="font-bold">$1,500 - $8,000</em>
                 </p>
                 <p className="text-secondary/80">
                   During the initial discovery call, we will aim to identify
@@ -51,32 +50,26 @@ const FAQ = () => {
           </Accordion.Panel>
           <Accordion.Panel>
             <Accordion.Title>
-              <div className="text-secondary text-lg">
-                How long will the work take from start to finish?
+              <div className="text-secondary md:text-lg">
+                What's the estimated project timeline from start to finish?
               </div>
             </Accordion.Title>
             <Accordion.Content>
               <div className="font-jost pl-3 md:pl-6 space-y-6 text-sm md:text-lg">
                 <p className="text-secondary/80">
-                  It will depend on the scope of the project.
-                </p>
-                <p className="text-secondary/80">
-                  - A single landing page may take{" "}
-                  <em className="font-bold">1 - 3 weeks</em>, depending on the
-                  amount of copy.
-                </p>
-                <p className="text-secondary/80">
-                  - A full website with 5-10 pages may take{" "}
-                  <em className="font-bold">6 - 8 weeks</em>.
+                  The timeline for each project may vary depending on the goals
+                  and development skills needed. As a general estimate, it could
+                  take approximately <em className="font-bold">4 - 12 weeks</em>
+                  , considering your specific project requirements and the level
+                  of development expertise required to meet your goals.
                 </p>
               </div>
             </Accordion.Content>
           </Accordion.Panel>
           <Accordion.Panel>
             <Accordion.Title>
-              <div className="text-secondary text-lg">
-                Do you offer services for designing and developing e-commerce
-                websites?
+              <div className="text-secondary md:text-lg">
+                Can you create e-commerce websites as well?
               </div>
             </Accordion.Title>
             <Accordion.Content>

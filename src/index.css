@@ -422,3 +422,19 @@ body {
     transform: scale(20) translate3D(100vw, -100vh, 0) rotate(0);
   }
 }
+
+/* ===== FAQ Accordion ===== */
+
+.accordion-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 500ms;
+}
+
+.accordion-content[aria-hidden="true"] {
+  grid-template-rows: 1fr;
+}
+
+.accordion-content > div {
+  overflow: hidden;
+}

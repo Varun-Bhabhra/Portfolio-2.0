@@ -25,7 +25,7 @@ const Portfolio = () => {
       <section className="max-w-screen-xl mx-auto">
         <TempCTA
           head="New Plan"
-          text="Unlock the full potential of your business with our new online presence solution. Starting at just $649"
+          text="Unlock the full potential of your business with our new online presence solution. Starting at just $699"
           tags="#OnlinePresence #BusinessGrowth"
         />
       </section>

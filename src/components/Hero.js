@@ -36,7 +36,7 @@ const Hero = () => {
             {/* <h2 className={`fade-in-two font-bold font-jost text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${myElementIsVisible ? "headline" : ""}`}>I help brands scale through their websites</h2> */}
 
             <h2
-              className={`fade-in-two font-bold font-jost text-2xl md:text-4xl lg:text-5xl xl:text-6xl ${
+              className={`fade-in-two font-bold font-jost text-2xl md:text-4xl lg:text-5xl xl:text-6xl xl:leading-tight ${
                 myElementIsVisible ? "headline" : ""
               }`}
             >

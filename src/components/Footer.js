@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 // Imgs
@@ -13,6 +13,19 @@ const Footer = () => {
     triggerOnce: true,
   });
 
+  const [year, setYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const newYear = new Date().getFullYear();
+      if (newYear !== year) {
+        setYear(newYear);
+      }
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, [year]);
+
   return (
     <div id="showcase" className="text-primary">
       <section className="bg-secondary">
@@ -26,10 +39,10 @@ const Footer = () => {
                 <img
                   src={footer_me}
                   alt="Sexy Pants!"
-                  className="w-16 h-16 rounded-full object-cover object-center border-2 border-primary"
+                  className="w-16 h-16 rounded-full object-cover object-center border-2 border-primary grayscale hover:grayscale-0"
                 />
                 <h2 className="font-light">
-                  Designed & Developed with love💚&☕ by{" "}
+                  Designed & Developed with 💚 & ☕ by{" "}
                   <span className="md:block font-semibold">Varun Bhabhra</span>
                 </h2>
               </div>
@@ -74,7 +87,7 @@ const Footer = () => {
             <hr className="border-primary rounded-full my-10" />
 
             <p className="text-center">
-              All rights reserved | Copyright © 2023 Varun Bhabhra
+              All rights reserved | Copyright © {year} Varun Bhabhra
             </p>
           </section>
         </article>

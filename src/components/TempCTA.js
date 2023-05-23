@@ -69,7 +69,7 @@ const TempCTA = ({ head, text, tags }) => {
           >
             <div className="flex h-full w-full items-center justify-center bg-[#012023] back rounded-lg cursor-pointer hover:-translate-y-1 transition-transform">
               <span className="cta_price font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FAFF00] to-[#7AFF53] text-2xl md:text-2xl lg:text-4xl xl:text-5xl">
-                $649<span className="text-sm">(ONLY)</span>
+                $699<span className="text-sm">(ONLY)</span>
               </span>
             </div>
           </Link>

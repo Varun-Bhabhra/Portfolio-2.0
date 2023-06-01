@@ -77,7 +77,7 @@ const Hero = () => {
                 target="__blank"
                 className="inline-block text-center bg-primary text-action border-2 border-action hover:bg-action/10 font-semibold py-3 w-full text-sm lg:text-lg rounded-lg cursor-pointer hover:shadow-lg hover:shadow-action/30 transition-all hover:-translate-y-[2px] duration-200"
               >
-                View Portfolio
+                View Client Projects
               </Link>
             </div>
           </div>

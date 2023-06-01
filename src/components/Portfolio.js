@@ -42,7 +42,7 @@ const Portfolio = () => {
               }`}
             >
               <h2 className="font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">
-                Portfolio
+                My Clients
               </h2>
               <p className="font-jost font-regular text-base lg:text-lg sm:w-5/6 mx-auto md:mx-0">
                 I’ve worked with some great clients, but I won’t blab about them

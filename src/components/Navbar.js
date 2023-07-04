@@ -124,7 +124,7 @@ const Navbar = () => {
               />
             </a>
             <a
-              href="https://www.instagram.com/varun_frontend_dev/"
+              href="https://www.instagram.com/developedbyvarun/"
               target="__blank"
             >
               <img

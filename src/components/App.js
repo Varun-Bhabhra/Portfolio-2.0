@@ -11,7 +11,7 @@ import Footer from "./Footer";
 
 const App = () => {
   return (
-    <div id="showcase" className="font-poppins">
+    <div id="showcase" className="font-pretendard">
       <Navbar />
       <Hero />
       <Portfolio />

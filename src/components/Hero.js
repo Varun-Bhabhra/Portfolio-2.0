@@ -4,10 +4,9 @@ import { PopupButton } from "react-calendly";
 
 // Imgs
 // import hero_me from "../img/hero_me.webp"
-import hero_me2 from "../img/hero_me2.webp";
-import mobile_me from "../img/mobile_me.webp";
-import herobg from "../img/hero_bg.svg";
-import herobg2 from "../img/hero_bg2.svg";
+import one from "../img/1.webp";
+import two from "../img/2.webp";
+import three from "../img/3.webp";
 
 const Hero = () => {
   const { ref: myRef, inView: myElementIsVisible } = useInView({
@@ -15,48 +14,55 @@ const Hero = () => {
   });
 
   return (
-    <div id="showcase" className="pt-16 text-secondary">
+    <div id="showcase" className="pt-44 text-secondary">
       <section
         id="hero"
-        className="max-w-screen-xl text-left sm:text-left mx-auto px-6 md:px-12 2xl:px-0 pb-24 sm:pb-0 grid gap10 sm:gap-0 justify-items-center items-center sm:grid-flow-col"
+        className="max-w-screen-xl text-left sm:text-left mx-auto px-6 md:px-12 2xl:px-0 pb-24 sm:pb-0 grid gap10 sm:gap-24 justify-items-center items-center"
       >
-        <div className="order-2 sm:order-1 relative space-y-4 sm:space-y-8 text-center sm:text-left md:mb-32 z-10">
-          <div className="space-y-4 md:space-y-8 ">
-            <p
-              className={`fade-in-one font-normal text-xs md:text-base xl:text-2xl xl:w-4/6 ${
-                myElementIsVisible ? "headline" : ""
-              }`}
-            >
-              👋 Hello there, I'm{" "}
-              <span className="font-semibold hover:text-action transition-all">
-                Varun
-              </span>
-            </p>
+        {/* Image */}
+        <div className="sm:pb-24">
+          <div className="relative flex">
+            <img
+              src={three}
+              alt="Mr. Manager"
+              width="500"
+              height="500"
+              className="absolute right-32 top-16 w-full h-24 md:h-96 object-contain scale-90"
+            />
+            <img
+              src={one}
+              alt="Mr. Smarty Pants"
+              width="500"
+              height="500"
+              className="w-full h-24 md:h-96 object-contain scale-125"
+            />
+            <img
+              src={two}
+              alt="Mr. Designer"
+              width="500"
+              height="500"
+              className="absolute left-48 top-14 w-full h-24 md:h-96 object-contain scale-110 -z-10"
+            />
+          </div>
+        </div>
 
-            {/* <h2 className={`fade-in-two font-bold font-jost text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${myElementIsVisible ? "headline" : ""}`}>I help brands scale through their websites</h2> */}
-
+        {/* Heading */}
+        <div className="relativ space-y-4 sm:space-y-8 text-center md:mb-32 z-10">
+          <div className="">
             <h2
-              className={`fade-in-two font-bold font-jost text-2xl md:text-4xl lg:text-5xl xl:text-6xl xl:leading-tight ${
+              className={`fade-in-two font-semibold text-2xl md:text-4xl lg:text-5xl xl:text-5xl xl:leading-tight ${
                 myElementIsVisible ? "headline" : ""
               }`}
             >
-              Empowering brands with custom, high-converting{" "}
-              <br className="sm:hidden" /> websites
+              I assist brands grow with visually appealing,{" "}
+              <br className="sm:hidden" /> brand-accurate & user-friendly
+              websites.
             </h2>
-
-            <p
-              className={`fade-in-three font-normal text-sm md:text-base xl:text-2xl xl:w-6/6 ${
-                myElementIsVisible ? "headline" : ""
-              }`}
-            >
-              that are appealing, brand-accurate, <br className="lg:hidden" /> &
-              user-friendly.
-            </p>
           </div>
 
           <div
             ref={myRef}
-            className={`fade-in pt-4 flex flex-col md:flex-row gap-4 ${
+            className={`fade-in pt-4 flex flex-col md:flex-row gap-4 justify-center ${
               myElementIsVisible ? "heroBtn" : ""
             }`}
           >
@@ -81,36 +87,6 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-        </div>
-
-        <img
-          src={herobg}
-          alt="background"
-          className="from_right px-2 absolute w-5/6 sm:w-4/6 lg:w-7/12 right-4 md:right-12 bottom-[43rem] sm:bottom-44 scale[1.7] lg:scale100"
-        />
-        <img
-          src={herobg2}
-          alt="background"
-          className="from_left px-2 absolute w-5/6 sm:w-4/6 lg:w-7/12 left-4 md:left-12 top-64 md:top-44 scale[1.7] z-0"
-        />
-
-        <div className="order-1 sm:order-2 md:-translate-y-28 wrapper sm:drop-shadow-2xl sm:pb-14">
-          <div id="anim">
-            <img
-              id="myself"
-              src={hero_me2}
-              alt="Mr. Smarty Pants"
-              width="2236"
-              height="4000"
-              className="hidden sm:block w-full h-[40rem] md:h-[63rem] object-cover"
-            />
-          </div>
-          <img
-            id="myself"
-            src={mobile_me}
-            alt="Mr. Smarty Pants"
-            className="sm:hidden w-full h-[20rem] scale-110 drop-shadow-xl object-cover"
-          />
         </div>
       </section>
     </div>

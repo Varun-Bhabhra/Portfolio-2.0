@@ -8,21 +8,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#efeee5",
-        secondary: "#274546",
-        action: "#f99a49",
-        extra: "#6CE5B1",
+        primary: "#ffffff",
+        secondary: "#171717",
+        action: "#171717",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         jost: ["Jost", "sans-serif"],
+        pretendard: ["Pretendard", "sans-serif"],
       },
       backgroundImage: {
         "services-bg": "url('/src/img/services_bg.svg')",
         "skills-bg": "url('/src/img/skills_bg.svg')",
-        "about-bg": "url('/src/img/about_bg.svg')",
-        "testimonials-bg": "url('/src/img/testimonials_bg.svg')",
-        "portfolio-bg": "url('/src/img/portfolio_bg.svg')",
+
         "newcta-bg": "url('/src/img/newcta_bg.svg')",
       },
     },

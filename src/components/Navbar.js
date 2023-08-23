@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-scroll";
 
 // Imgs
-import logo from "../img/logo.svg";
-import msg from "../img/msg.svg";
 import twitter from "../img/twitter.svg";
 import instagram from "../img/instagram.svg";
 import linkedin from "../img/linkedin.svg";
@@ -16,15 +14,11 @@ const Navbar = () => {
   };
 
   return (
-    <section className="font-poppins">
+    <section className="font-pretendard">
       <header className="fixed px-4 lg:px-12 xl:px-24 2xl:px-32 py-2 md:py-4">
         <div div id="logo">
           <Link to="hero" spy={true} smooth={true} offset={-150} duration={800}>
-            <img
-              src={logo}
-              alt="vector"
-              className="w-16 lg:w-20 h-16 lg:h-20 hover:scale-105 hover:cursor-pointer transition-all"
-            />
+            <span className="">@developedbyvarun</span>
           </Link>
         </div>
 
@@ -99,16 +93,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* <div className="w-4/6 text-center text-action">
-            <ButtonGhost
-                href="https://drive.google.com/file/d/1TpoWs_9WP8vOUGg_a1KbOYJGaVmebVd_/view?usp=sharing"
-              text="Resume"
-              target="__blank"
-              />
-          </div> */}
-
         <div className="flex flex-col gap-4 items-center text-center  text-primary">
-          <img src={msg} alt="vector" className="w-6" />
           <div className="space-y-4">
             <h2 className="font-extralight text-sm md:text-lg uppercase">
               Don't be a stranger!

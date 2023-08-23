@@ -18,7 +18,11 @@ const PortfolioCard = ({ head, para, href, mockup }) => {
         }`}
       >
         <div className="pt-4 rounded-xl">
-          <img src={mockup} alt="Website Mockup" className="scale-110" />
+          <img
+            src={mockup}
+            alt="Website Mockup"
+            className="scale-110 grayscale hover:grayscale-0 transition-all"
+          />
         </div>
         <div className="px-4 lg:px-12 space-y-6">
           <h2 className="font-semibold text-3xl lg:text-4xl">{head}</h2>

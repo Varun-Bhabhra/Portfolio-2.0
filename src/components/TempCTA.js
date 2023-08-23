@@ -15,7 +15,7 @@ const TempCTA = ({ head, text, tags }) => {
   return (
     <div
       id="new"
-      className="new_cta font-jost text-[#CBCBCB] bg-gradient-to-b md:bg-gradient-to-r from-[#012023] to-[#254447] rounded-3xl mx-6 py-8 px-2 md:px-0 lg:pl-8 flex flex-col-reverse sm:flex-row-reverse gap-12 -translate-y-12 md:-translate-y-24 overflow-hidden"
+      className="new_cta font-jost text-[#CBCBCB] bg-gradient-to-b md:bg-gradient-to-r from-[#012023] to-[#254447] rounded-3xl mx-6 md:mx-0 py-8 px-2 md:px-0 lg:pl-8 flex flex-col-reverse sm:flex-row-reverse gap-12 -translate-y-12 md:-translate-y-24 overflow-hidden"
     >
       <img
         ref={myRef}

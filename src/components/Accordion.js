@@ -41,7 +41,10 @@ const Accordion = () => {
   };
 
   return (
-    <section className="bg-primary pb-20 text-secondary relative space-y-16">
+    <section
+      id="showcase"
+      className=" pb-20 text-secondary relative space-y-16"
+    >
       <h2 className="text-center font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl">
         FAQ's
       </h2>

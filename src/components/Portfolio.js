@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import PortfolioCard from "./PortfolioCard";
 import TechItem from "./TechItem";
 import CTA from "./CTA";
-import TempCTA from "./TempCTA";
+// import TempCTA from "./TempCTA";
 
 // Imgs
 import mdp from "../img/mdp.webp";
@@ -22,13 +22,13 @@ const Portfolio = () => {
 
   return (
     <div id="showcase" className="py-12 text-secondary">
-      <section className="max-w-screen-xl mx-auto">
+      {/* <section className="max-w-screen-xl mx-auto">
         <TempCTA
           head="New Plan"
           text="Unlock the full potential of your business with our new online presence solution. Starting at just $699"
           tags="#OnlinePresence #BusinessGrowth"
         />
-      </section>
+      </section> */}
       <section
         id="portfolio"
         className="max-w-screen-xl mx-auto px-6 md:px-12 2xl:px-0 space-y-32"

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Instagram, Github, Mail, Loader2 } from "lucide-react";
+import { Instagram, Mail, Loader2 } from "lucide-react";
 
 const Offline = () => {
   const [loading, setLoading] = useState(true);
